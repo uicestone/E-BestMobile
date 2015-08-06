@@ -465,7 +465,7 @@ header .navbar-nav li .dropdown-menu {
       float: left;
       margin: 0 1em 0 0;
       width: 200px;
-      font-size: 18px;
+      font-size: 14px;
       height: 175px; }
       #footer .footer-widget .container .site-map .cat dt {
         color: #fff; }
@@ -740,30 +740,30 @@ header .navbar-nav li .dropdown-menu {
         margin-left: 20%;
         width: 80%; } }
 
-.archive .title_h2 {
+.archive .title_h2, .single-post .title_h2 {
   background-color: #eee; }
-  .archive .title_h2 h2 {
+  .archive .title_h2 h2, .single-post .title_h2 h2 {
     margin: 3vw 0; }
 
-.archive .content_title {
+.archive .content_title, .single-post .content_title, .archive .content_title a, .single-post .content_title a {
   color: #84bae5;
   margin: 0 0 10px; }
-  .archive .content_title small {
+  .archive .content_title small, .single-post .content_title small {
     float: right;
     color: #84bae5;
     line-height: 40px; }
 
-.archive .tabs {
+.archive .tabs, .single-post .tabs {
   margin-top: 45px; }
-  .archive .tabs .tab-content {
+  .archive .tabs .tab-content, .single-post .tabs .tab-content {
     border-bottom: 1px solid #e1e1e1;
     margin-bottom: 15px; }
-  .archive .tabs .unbor_bottom {
+  .archive .tabs .unbor_bottom, .single-post .tabs .unbor_bottom {
     border: 0px solid #eee; }
 
-.archive .page_list {
+.archive .page_list, .single-post .page_list {
   text-align: center; }
-  .archive .page_list div {
+  .archive .page_list div, .single-post .page_list div {
     display: inline-block;
     color: #fff;
     width: 40px;
@@ -771,22 +771,22 @@ header .navbar-nav li .dropdown-menu {
     line-height: 40px;
     border-radius: 50%;
     margin: 0 10px; }
-  .archive .page_list .bg_blue {
+  .archive .page_list .bg_blue, .single-post .page_list .bg_blue {
     background-color: #181d61; }
-  .archive .page_list .bg_gray {
+  .archive .page_list .bg_gray, .single-post .page_list .bg_gray {
     background-color: #c9cacb;
     width: 50px;
     height: 50px;
     line-height: 50px; }
 
-.archive .trial {
+.archive .trial, .single-post .trial {
   background-color: #181d61;
   height: 13vw;
   width: 100%;
   color: #fff;
   position: relative;
   padding: 0 3px; }
-  .archive .trial:before {
+  .archive .trial:before, .single-post .trial:before {
     content: '';
     background-color: #181d61;
     position: absolute;
@@ -794,49 +794,49 @@ header .navbar-nav li .dropdown-menu {
     top: 0;
     width: 100vw;
     height: 100%; }
-  .archive .trial .trial_list {
+  .archive .trial .trial_list, .single-post .trial .trial_list {
     position: absolute;
     right: 0;
     text-align: center;
     width: 100%; }
-    .archive .trial .trial_list p {
+    .archive .trial .trial_list p, .single-post .trial .trial_list p {
       color: #fff;
       margin: 0;
       height: 4vw;
       line-height: 4vw; }
-    .archive .trial .trial_list .bt_white {
+    .archive .trial .trial_list .bt_white, .single-post .trial .trial_list .bt_white {
       border-bottom: 1px solid #fff; }
-    .archive .trial .trial_list .bg_lightblue {
+    .archive .trial .trial_list .bg_lightblue, .single-post .trial .trial_list .bg_lightblue {
       background-color: #84bae5;
       padding: 0 0.5vw; }
 
 @media only screen and (max-width: 760px) {
-  .archive .widget {
+  .archive .widget, .single-post .widget {
     display: none; }
-  .archive .trial {
+  .archive .trial, .single-post .trial {
     width: 70%;
     position: absolute;
     bottom: -4em; }
-    .archive .trial .trial_list {
+    .archive .trial .trial_list, .single-post .trial .trial_list {
       width: 55%; }
-  .archive .sidebar {
+  .archive .sidebar, .single-post .sidebar {
     position: static; }
-  .archive .tabs {
+  .archive .tabs, .single-post .tabs {
     margin-top: 0; }
-  .archive h4 {
+  .archive h4, .single-post h4 {
     font-size: 100%; } }
 
 @media only screen and (max-width: 480px) {
-  .archive .trial {
+  .archive .trial, .single-post .trial {
     width: 85%;
     height: 23vw;
     padding-top: 5px; }
-    .archive .trial .trial_list {
+    .archive .trial .trial_list, .single-post .trial .trial_list {
       width: 90%; }
-      .archive .trial .trial_list p {
+      .archive .trial .trial_list p, .single-post .trial .trial_list p {
         height: 6vw;
         line-height: 6vw; }
-  .archive .content {
+  .archive .content, .single-post .content {
     margin-bottom: 20px; } }
 
 #page-contact .map-msg {

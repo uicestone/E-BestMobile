@@ -75,7 +75,7 @@
 									<!-- Title -->
 									<h4>Retail<br> Execution</h4></div>
 								<div class="mask-bottom">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum. Suspendisse cursus malesuada facilisis.</p>
+									<p></p>
 								</div>
 							</div>
 						</div>
@@ -88,7 +88,7 @@
 									<!-- Title -->
 									<h4>Magical <br>Animations</h4></div>
 								<div class="mask-bottom">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum. Suspendisse cursus malesuada facilisis.</p>
+									<p></p>
 								</div>
 							</div>
 						</div>
@@ -101,7 +101,7 @@
 									<!-- Title -->
 									<h4>Trade<br>Promotion</h4></div>
 								<div class="mask-bottom">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum. Suspendisse cursus malesuada facilisis.</p></div>
+									<p></p></div>
 							</div>
 						</div>
 						<!-- Special Feature Box 3 -->
@@ -113,7 +113,7 @@
 									<!-- Title -->
 									<h4>Order<br>Management</h4></div>
 								<div class="mask-bottom">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum. Suspendisse cursus malesuada facilisis.</p></div>
+									<p></p></div>
 							</div>
 						</div>
 						<!-- Special Feature Box 1 -->
@@ -125,7 +125,7 @@
 									<!-- Title -->
 									<h4>Supervisor</h4></div>
 								<div class="mask-bottom">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum. Suspendisse cursus malesuada facilisis.</p></div>
+									<p></p></div>
 							</div>
 						</div>
 						<!-- Special Feature Box 2 -->
@@ -141,7 +141,7 @@
 									<!-- Title -->
 									<h4>Store<br>Audit</h4></div>
 								<div class="mask-bottom">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum. Suspendisse cursus malesuada facilisis.</p></div>
+									<p></p></div>
 							</div>
 						</div>
 						<!-- Special Feature Box 3 -->
@@ -153,7 +153,7 @@
 									<!-- Title -->
 									<h4>Online to<br>Offline</h4></div>
 								<div class="mask-bottom">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum. Suspendisse cursus malesuada facilisis.</p></div>
+									<p></p></div>
 							</div>
 						</div>
 						<div class="col-md-3 col-sm-6 animated fadeInRight visible" data-animation="fadeInRight">
@@ -164,7 +164,7 @@
 									<!-- Title -->
 									<h4>Distributor<br>Management</h4></div>
 								<div class="mask-bottom">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum. Suspendisse cursus malesuada facilisis.</p></div>
+									<p></p></div>
 							</div>
 						</div>
 						<div class="col-md-3 col-sm-6 animated fadeInLeft visible" data-animation="fadeInLeft">
@@ -175,7 +175,7 @@
 									<!-- Title -->
 									<h4>Asset<br>Management</h4></div>
 								<div class="mask-bottom">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum. Suspendisse cursus malesuada facilisis.</p></div>
+									<p></p></div>
 							</div>
 						</div>
 						<div class="col-md-3 col-sm-6 animated fadeInDown visible" data-animation="fadeInDown">
@@ -186,7 +186,7 @@
 									<!-- Title -->
 									<h4>Customer<br>Self Order</h4></div>
 								<div class="mask-bottom">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum. Suspendisse cursus malesuada facilisis.</p></div>
+									<p></p></div>
 							</div>
 						</div>
 					</div>
@@ -223,7 +223,7 @@
 							<!-- Title -->
 							<h4>Retail<br> Execution</h4></div>
 						<div class="mask-bottom">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum. Suspendisse cursus malesuada facilisis.</p>
+							<p></p>
 						</div>
 					</div>
 				</div>
@@ -236,7 +236,7 @@
 							<!-- Title -->
 							<h4>Magical <br>Animations</h4></div>
 						<div class="mask-bottom">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum. Suspendisse cursus malesuada facilisis.</p>
+							<p></p>
 						</div>
 					</div>
 				</div>
@@ -249,7 +249,7 @@
 							<!-- Title -->
 							<h4>Trade<br>Promotion</h4></div>
 						<div class="mask-bottom">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum. Suspendisse cursus malesuada facilisis.</p></div>
+							<p></p></div>
 					</div>
 				</div>
 				<!-- Special Feature Box 3 -->
@@ -261,7 +261,7 @@
 							<!-- Title -->
 							<h4>Order<br>Management</h4></div>
 						<div class="mask-bottom">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum. Suspendisse cursus malesuada facilisis.</p></div>
+							<p></p></div>
 					</div>
 				</div>
 				<!-- Special Feature Box 1 -->
@@ -273,7 +273,7 @@
 							<!-- Title -->
 							<h4>Supervisor</h4></div>
 						<div class="mask-bottom">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum. Suspendisse cursus malesuada facilisis.</p></div>
+							<p></p></div>
 					</div>
 				</div>
 				<!-- Special Feature Box 3 -->
@@ -285,7 +285,7 @@
 							<!-- Title -->
 							<h4>Store<br>Audit</h4></div>
 						<div class="mask-bottom">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum. Suspendisse cursus malesuada facilisis.</p></div>
+							<p></p></div>
 					</div>
 				</div>
 				<!-- Special Feature Box 3 -->
@@ -297,7 +297,7 @@
 							<!-- Title -->
 							<h4>Online to<br>Offline</h4></div>
 						<div class="mask-bottom">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum. Suspendisse cursus malesuada facilisis.</p></div>
+							<p></p></div>
 					</div>
 				</div>
 				<div class="col-xs-3 animated fadeInRight visible" data-animation="fadeInRight">
@@ -308,7 +308,7 @@
 							<!-- Title -->
 							<h4>Distributor<br>Management</h4></div>
 						<div class="mask-bottom">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum. Suspendisse cursus malesuada facilisis.</p></div>
+							<p></p></div>
 					</div>
 				</div>
 				<div class="col-xs-3 animated fadeInLeft visible" data-animation="fadeInLeft">
@@ -319,7 +319,7 @@
 							<!-- Title -->
 							<h4>Asset<br>Management</h4></div>
 						<div class="mask-bottom">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum. Suspendisse cursus malesuada facilisis.</p></div>
+							<p></p></div>
 					</div>
 				</div>
 				<div class="col-xs-3 animated fadeInDown visible" data-animation="fadeInDown">
@@ -330,7 +330,7 @@
 							<!-- Title -->
 							<h4>Customer<br>Self Order</h4></div>
 						<div class="mask-bottom">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum. Suspendisse cursus malesuada facilisis.</p></div>
+							<p></p></div>
 					</div>
 				</div>
 			</div>
@@ -343,38 +343,18 @@
 			<div class="col-md-12">
 				<div class="tabs">
 					<ul class="nav nav-tabs">
-						<li class="active">
-							<a data-toggle="tab" href="#head" aria-expanded="true"> SFA Cloud</a>
+						<?php foreach(get_posts(array('category_name'=>'cloud', 'order'=>'ASC', 'posts_per_page'=>5)) as $index => $post){?>
+						<li<?php if($index === 0){ ?> class="active"<?php } ?>>
+							<a data-toggle="tab" href="#<?=$post->post_name?>" aria-expanded="true"> <?=$post->post_title?></a>
 						</li>
-						<li class="">
-							<a data-toggle="tab" href="#business" aria-expanded="false"> i-Mendor Cloud</a>
-						</li>
-						<li class="">
-							<a data-toggle="tab" href="#politics" aria-expanded="false">iOt Cloud</a>
-						</li>
-						<li class="">
-							<a data-toggle="tab" href="#sports" aria-expanded="false">DMS Cloud</a>
-						</li>
-						<li class="">
-							<a data-toggle="tab" href="#world" aria-expanded="false"> DSD Cloud</a>
-						</li>
+						<?php } ?>
 					</ul>
 					<div class="tab-content">
-						<div id="head" class="tab-pane fade active in">
+						<?php foreach(get_posts(array('category_name'=>'cloud', 'order'=>'ASC', 'posts_per_page'=>5)) as $index => $post){?>
+						<div id="<?=$post->post_name?>" class="tab-pane fade<?php if($index === 0){ ?> active<?php } ?> in">
 							<img src="<?=get_stylesheet_directory_uri()?>/img/cloud-slider.jpg">
 						</div>
-						<div id="business" class="tab-pane fade">
-							<img src="<?=get_stylesheet_directory_uri()?>/img/cloud-slider.jpg">
-						</div>
-						<div id="politics" class="tab-pane fade">
-							<img src="<?=get_stylesheet_directory_uri()?>/img/cloud-slider.jpg">
-						</div>
-						<div id="sports" class="tab-pane fade">
-							<img src="<?=get_stylesheet_directory_uri()?>/img/cloud-slider.jpg">
-						</div>
-						<div id="world" class="tab-pane fade">
-							<img src="<?=get_stylesheet_directory_uri()?>/img/cloud-slider.jpg">
-						</div>
+						<?php } ?>
 					</div>
 					<div class="clearfix"></div>
 				</div>
@@ -399,33 +379,17 @@
 						<!-- Content -->
 						<div data-animation="fadeInDown" class="animated fadeInDown visible">
 							<ul class="list-group widget">
+								<?php foreach(get_posts(array('category_name'=>'news')) as $post){ ?>
 								<li class="item">
 									<div class="title clearfix">
-										<div class="pull-right">2015-3-5</div>
-										<div class="pull-left">In an age of see it <span class="arrow"></span></div>
+										<div class="pull-right"><?=get_the_date('', $post)?></div>
+										<div class="pull-left"><?=get_the_title($post)?> <span class="arrow"></span></div>
 									</div>
 									<div class="content">
-										Duis aute irure dolor in reprehenderit involuptate velit esse cillum dolore eu fugiat nulla pariatur.Duis aute irure dolor in reprehenderit involuptate velit esse cillum dolore eu fugiat nulla pariatur.
+										<?=$post->post_excerpt;?>
 									</div>
 								</li>
-								<li class="item">
-									<div class="title clearfix">
-										<div class="pull-right">2015-3-5</div>
-										<div class="pull-left">In an age of see it<span class="arrow"></span></div>
-									</div>
-									<div class="content">
-										Duis aute irure dolor in reprehenderit involuptate velit esse cillum dolore eu fugiat nulla pariatur.Duis aute irure dolor in reprehenderit involuptate velit esse cillum dolore eu fugiat nulla pariatur.
-									</div>
-								</li>
-								<li class="item">
-									<div class="title clearfix">
-										<div class="pull-right">2015-3-5</div>
-										<div class="pull-left">In an age of see it<span class="arrow"></span></div>
-									</div>
-									<div class="content">
-										Duis aute irure dolor in reprehenderit involuptate velit esse cillum dolore eu fugiat nulla pariatur.Duis aute irure dolor in reprehenderit involuptate velit esse cillum dolore eu fugiat nulla pariatur.
-									</div>
-								</li>
+								<?php } ?>
 							</ul>
 						</div>
 					</div>

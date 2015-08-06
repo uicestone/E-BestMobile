@@ -5,47 +5,57 @@
 						<div class="cat">
 							<dl>
 								<dt>Products</dt>
-								<dd>SFA</dd>
-								<dd>Cooler iOt</dd>
-								<dd>i-Mentor</dd>
-								<dd>DMS</dd>
-								<dd>DSD</dd>
+								<?php foreach(get_posts(array('category_name'=>'products')) as $post){ ?>
+								<dd><?=get_the_title($post->id)?></dd>
+								<?php } ?>
 							</dl>
 						</div>
 						<div class="cat">
 							<dl>
 								<dt>Cloud</dt>
-								<dd>SFA Cloud</dd>
-								<dd>iOt Cloud</dd>
-								<dd>i-Mentor Cloud</dd>
-								<dd>DMS Cloud</dd>
-								<dd>DSD Cloud</dd>
-								<dd>i-SFA</dd>
+								<?php foreach(get_posts(array('category_name'=>'cloud')) as $post){ ?>
+								<dd><?=get_the_title($post->id)?></dd>
+								<?php } ?>
 							</dl>
 						</div>
 						<div class="cat">
 							<dl>
 								<dt>Industries</dt>
+								<?php foreach(get_posts(array('category_name'=>'industries')) as $post){ ?>
+								<dd><?=get_the_title($post->id)?></dd>
+								<?php } ?>
 							</dl>
 						</div>
 						<div class="cat">
 							<dl>
 								<dt>Customer</dt>
+								<?php foreach(get_posts(array('category_name'=>'customer')) as $post){ ?>
+								<dd><?=get_the_title($post->id)?></dd>
+								<?php } ?>
 							</dl>
 						</div>
 						<div class="cat">
 							<dl>
 								<dt>Service</dt>
+								<?php foreach(get_posts(array('category_name'=>'service')) as $post){ ?>
+								<dd><?=get_the_title($post->id)?></dd>
+								<?php } ?>
 							</dl>
 						</div>
 						<div class="cat">
 							<dl>
 								<dt>News</dt>
+								<?php foreach(get_posts(array('category_name'=>'news')) as $post){ ?>
+								<dd><?=get_the_title($post->id)?></dd>
+								<?php } ?>
 							</dl>
 						</div>
 						<div class="cat">
 							<dl>
 								<dt>Company</dt>
+								<?php foreach(get_posts(array('category_name'=>'company')) as $post){ ?>
+								<dd><?=get_the_title($post->id)?></dd>
+								<?php } ?>
 							</dl>
 						</div>
 					</div>

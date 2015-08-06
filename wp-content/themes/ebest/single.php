@@ -2,7 +2,7 @@
 
 <section class="title_h2">
 	<div class="container">
-		<h2><?php single_cat_title(); ?></h2>
+		<h2><?php the_title(); ?></h2>
 	</div>
 </section>
 <section class="breadcrumb-box">
@@ -76,18 +76,12 @@
 						<div class="tab-pane fade active in">
 							<h4 class="content_title">
 								<small class=""><?php the_date('Y-m-d'); ?></small>
-								<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+								<?php the_title(); ?>
 							</h4>
-							<p><?php the_excerpt(); ?></p>
+							<p><?php the_content(); ?></p>
 						</div>
 					</div>
 					<?php endwhile; ?>
-					<div class="clearfix"></div>
-					<div class="page_list">
-						<div class="bg_blue"><span>&lt;</span></div>
-						<div class="bg_gray">1</div>
-						<div class="bg_blue"><span>&gt;</span></div>
-					</div>
 				</div>
 
 			</div>

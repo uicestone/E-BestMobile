@@ -1,7 +1,7 @@
 <?php $page_class = 'page-products-cloud'; get_header(); ?>
 
 <section class="banner">
-	<div class="banner-bg" style="background-image: url(../img/products-banner.jpg);"></div>
+	<div class="banner-bg" style="background-image: url('<?=get_stylesheet_directory_uri()?>/img/products-banner.jpg');"></div>
 	<div class="sub-nav">
 		<div class="container">
 			<div class="content">

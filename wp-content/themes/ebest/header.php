@@ -100,7 +100,7 @@
 											<img class="site_logo" alt="Site Logo" src="<?=get_stylesheet_directory_uri()?>/img/logo.png" />
 										</a></div>
 									<!-- Navbar Collapse -->
-									<?php wp_nav_menu(array('theme_location'=>'main', 'container'=>'div', 'container_class'=>'navbar-collapse collapse', 'menu_class'=>'nav navbar-nav')); ?>
+									<?php wp_nav_menu(array('theme_location'=>'main', 'container'=>'div', 'container_class'=>'navbar-collapse collapse', 'menu_class'=>'nav navbar-nav', 'walker'=>new EBest_Walker_Nav_Menu())); ?>
 									<!--nav data-sm-skip-collapsible-behavior="true"-->
 								</div>
 								<!-- /.col-md-12 -->

@@ -3,5 +3,12 @@ Theme Name: E-BestMobile
 Author: Rupert, Uice Lu
 */
 #footer .footer-widget .container .site-map .cat {
-	width: 12%;
+	width: 13%;
+}
+
+.site-map .cat dd {
+	word-wrap: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
