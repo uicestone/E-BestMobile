@@ -102,7 +102,102 @@
 											<img class="site_logo" alt="Site Logo" src="<?=get_stylesheet_directory_uri()?>/img/logo.png" />
 										</a></div>
 									<!-- Navbar Collapse -->
-									<?php wp_nav_menu(array('theme_location'=>'main', 'container'=>'div', 'container_class'=>'navbar-collapse collapse', 'menu_class'=>'nav navbar-nav', 'walker'=>new EBest_Walker_Nav_Menu())); ?>
+									<div class="navbar-collapse collapse">
+										<!-- nav -->
+										<ul class="nav navbar-nav" data-sm-skip-collapsible-behavior="true">
+											<!-- Home  Mega Menu -->
+											<li class="">
+												<a href="<?=site_url()?>">Home</a>
+											</li>
+											<!-- Mega Menu Ends -->
+											<!-- Pages Mega Menu -->
+											<li class="">
+												<a href="<?=site_url()?>/products/">Products</a>
+												<ul class="dropdown-menu">
+													<?php foreach(get_posts(array('category_name'=>'products', 'order'=>'ASC')) as $post){ ?>
+													<li>
+														<a href="<?=site_url()?>/category/products/#<?=$post->post_name?>"><?=$post->post_title?></a>
+													</li>
+													<?php } ?>
+												</ul>
+											</li>
+											<!-- Pages Menu Ends -->
+											<!-- Portfolio Menu -->
+											<li>
+												<a href="<?=site_url()?>/cloud/">Cloud</a> 
+												<!-- Portfolio Dropdown Menu -->
+												<ul class="dropdown-menu">
+													<?php foreach(get_posts(array('category_name'=>'cloud', 'order'=>'ASC')) as $post){ ?>
+													<li>
+														<a href="<?=site_url()?>/category/cloud/#<?=$post->post_name?>"><?=$post->post_title?></a>
+													</li>
+													<?php } ?>
+												</ul>
+											<!-- Portfolio Dropdown Menu -->
+											</li>
+											<!-- Portfolio Menu -->
+											<!-- Shop Menu -->
+											<li>
+												<a href="<?=site_url()?>/category/industries/">Industries</a> 
+												<!-- Portfolio Dropdown Menu -->
+												<ul class="dropdown-menu">
+													<?php foreach(get_posts(array('category_name'=>'industries', 'order'=>'ASC')) as $post){ ?>
+													<li>
+														<a href="<?=site_url()?>/category/industries/#<?=$post->post_name?>"><?=$post->post_title?></a>
+													</li>
+													<?php } ?>
+												</ul>
+											</li>
+											<li>
+												<a href="<?=site_url()?>/category/customer/">Customer</a> 
+												<!-- Portfolio Dropdown Menu -->
+												<ul class="dropdown-menu">
+													<?php foreach(get_posts(array('category_name'=>'customer', 'order'=>'ASC')) as $post){ ?>
+													<li>
+														<a href="<?=site_url()?>/category/customer/#<?=$post->post_name?>"><?=$post->post_title?></a>
+													</li>
+													<?php } ?>
+												</ul>
+											</li>
+											<li>
+												<a href="<?=site_url()?>/category/service/">Service</a> 
+												<!-- Portfolio Dropdown Menu -->
+												<ul class="dropdown-menu">
+													<?php foreach(get_posts(array('category_name'=>'service', 'order'=>'ASC')) as $post){ ?>
+													<li>
+														<a href="<?=site_url()?>/category/service/#<?=$post->post_name?>"><?=$post->post_title?></a>
+													</li>
+													<?php } ?>
+												</ul>
+											</li>
+											<li>
+												<a href="<?=site_url()?>/category/news/">News</a> 
+												<!-- Portfolio Dropdown Menu -->
+												<ul class="dropdown-menu">
+													<?php foreach(get_categories(array('parent'=>get_category_by_slug('news')->cat_ID, 'hide_empty'=>false)) as $category){ ?>
+													<li>
+														<a href="<?=get_category_link($category)?>"><?=$category->cat_name?></a>
+													</li>
+													<?php } ?>
+												</ul>
+											</li>
+											<!-- Ends Widgets Block -->
+											<!-- Pages Mega Menu -->
+											<li class="">
+												<a href="<?=site_url()?>/category/company/">Company</a> 
+												<!-- Portfolio Dropdown Menu -->
+												<ul class="dropdown-menu">
+													<?php foreach(get_posts(array('category_name'=>'company', 'order'=>'ASC')) as $post){ ?>
+													<li>
+														<a href="<?=site_url()?>/category/company/#<?=$post->post_name?>"><?=$post->post_title?></a>
+													</li>
+													<?php } ?>
+												</ul>
+											</li>
+											<!-- Shortcode Menu Ends -->
+										</ul>
+										<!-- Right nav -->
+									</div>
 									<!--nav data-sm-skip-collapsible-behavior="true"-->
 								</div>
 								<!-- /.col-md-12 -->
@@ -115,4 +210,3 @@
 				</div>
 				<!-- Sticky Menu -->
 			</header>
-

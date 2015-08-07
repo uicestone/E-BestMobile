@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php $page_class='archive'; get_header(); ?>
 
 <section class="title_h2">
 	<div class="container">
