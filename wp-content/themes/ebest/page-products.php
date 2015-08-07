@@ -12,7 +12,7 @@
 
 					</div>
 					<div class="col-xs-4">
-						<a href="#" class="btn btn-free">Free Trial</a>
+						<a href="http://www.ebestsfa.com" class="btn btn-free">Free Trial</a>
 					</div>
 				</div>
 				<div class="row btns tabs">
@@ -46,23 +46,23 @@
 			<h3>Providing Retail Execution For CPG</h3>
 		</div>
 		<nav class="bar-tab">
-			<a href="javascript:;" class="tab-item">
+			<a href="<?=site_url()?>/category/industries/#beverage" class="tab-item">
 				<span class="icon_img"><img src="<?=get_stylesheet_directory_uri()?>/img/bar01.png"></span>
 				<span class="tab-label">Beverage</span>
 			</a>
-			<a href="javascript:;" class="tab-item">
+			<a href="<?=site_url()?>/category/industries/#wine-and-spirits" class="tab-item">
 				<span class="icon_img"><img src="<?=get_stylesheet_directory_uri()?>/img/bar02.png"></span>
 				<span class="tab-label">Wine and Spirits</span>
 			</a>
-			<a href="javascript:;" class="tab-item">
+			<a href="<?=site_url()?>/category/industries/#food" class="tab-item">
 				<span class="icon_img"><img src="<?=get_stylesheet_directory_uri()?>/img/bar03.png"></span>
 				<span class="tab-label">Food</span>
 			</a>
-			<a href="javascript:;" class="tab-item">
+			<a href="<?=site_url()?>/category/industries/#homecare" class="tab-item">
 				<span class="icon_img"><img src="<?=get_stylesheet_directory_uri()?>/img/bar04.png"></span>
 				<span class="tab-label">Homecare</span>
 			</a>
-			<a href="javascript:;" class="tab-item">
+			<a href="<?=site_url()?>/category/industries/#lubricants" class="tab-item">
 				<span class="icon_img"><img src="<?=get_stylesheet_directory_uri()?>/img/bar05.png"></span>
 				<span class="tab-label">Lubricants</span>
 			</a>
