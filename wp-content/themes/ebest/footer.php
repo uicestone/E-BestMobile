@@ -6,7 +6,7 @@
 							<dl>
 								<dt>Products</dt>
 								<?php foreach(get_posts(array('category_name'=>'products')) as $post){ ?>
-								<dd><?=get_the_title($post->id)?></dd>
+								<dd><a href="<?=get_the_permalink($post)?>"><?=get_the_title($post->id)?></a></dd>
 								<?php } ?>
 							</dl>
 						</div>
@@ -14,7 +14,7 @@
 							<dl>
 								<dt>Cloud</dt>
 								<?php foreach(get_posts(array('category_name'=>'cloud')) as $post){ ?>
-								<dd><?=get_the_title($post->id)?></dd>
+								<dd><a href="<?=get_the_permalink($post)?>"><?=get_the_title($post->id)?></a></dd>
 								<?php } ?>
 							</dl>
 						</div>
@@ -22,7 +22,7 @@
 							<dl>
 								<dt>Industries</dt>
 								<?php foreach(get_posts(array('category_name'=>'industries')) as $post){ ?>
-								<dd><?=get_the_title($post->id)?></dd>
+								<dd><a href="<?=get_the_permalink($post)?>"><?=get_the_title($post->id)?></a></dd>
 								<?php } ?>
 							</dl>
 						</div>
@@ -30,7 +30,7 @@
 							<dl>
 								<dt>Customer</dt>
 								<?php foreach(get_posts(array('category_name'=>'customer')) as $post){ ?>
-								<dd><?=get_the_title($post->id)?></dd>
+								<dd><?=get_the_title($post->id)?></a></dd>
 								<?php } ?>
 							</dl>
 						</div>
@@ -38,15 +38,15 @@
 							<dl>
 								<dt>Service</dt>
 								<?php foreach(get_posts(array('category_name'=>'service')) as $post){ ?>
-								<dd><?=get_the_title($post->id)?></dd>
+								<dd><a href="<?=get_the_permalink($post)?>"><?=get_the_title($post->id)?></a></dd>
 								<?php } ?>
 							</dl>
 						</div>
 						<div class="cat">
 							<dl>
 								<dt>News</dt>
-								<?php foreach(get_posts(array('category_name'=>'news')) as $post){ ?>
-								<dd><?=get_the_title($post->id)?></dd>
+								<?php foreach(get_categories(array('parent'=>get_category_by_slug('news')->cat_ID, 'hide_empty'=>false)) as $category){ ?>
+								<dd><a href="<?=get_category_link($category)?>"><?=$category->cat_name?></a></dd>
 								<?php } ?>
 							</dl>
 						</div>
@@ -54,7 +54,7 @@
 							<dl>
 								<dt>Company</dt>
 								<?php foreach(get_posts(array('category_name'=>'company')) as $post){ ?>
-								<dd><?=get_the_title($post->id)?></dd>
+								<dd><a href="<?=get_the_permalink($post)?>"><?=get_the_title($post->id)?></a></dd>
 								<?php } ?>
 							</dl>
 						</div>
@@ -85,7 +85,6 @@
 		</div>
 		<!-- page -->
 		<!-- Scripts -->
-		<script type="text/javascript" src="<?=get_stylesheet_directory_uri()?>/js/jquery.min.js"></script> 
 		<script type="text/javascript" src="<?=get_stylesheet_directory_uri()?>/js/bootstrap.min.js"></script> 
 		<!-- Menu jQuery plugin -->
 

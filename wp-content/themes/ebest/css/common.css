@@ -198,7 +198,7 @@ header .navbar-nav li .dropdown-menu {
           justify-content: space-between;
   border: none; }
   .tabs .nav-tabs li {
-    height: 8vw;
+    height: 70px;
     max-height: 101px;
     -webkit-flex-grow: 1;
         -ms-flex-positive: 1;
@@ -223,7 +223,7 @@ header .navbar-nav li .dropdown-menu {
       line-height: 4vw;
       text-align: center;
       padding: 0;
-      font-size: 2vw;
+      font-size: 22px;
       color: #999; }
       .tabs .nav-tabs li a .active:hover, .tabs .nav-tabs li a .active:active {
         background: none; }
@@ -264,7 +264,7 @@ header .navbar-nav li .dropdown-menu {
 
 @media only screen and (min-width: 1200px) {
   .tabs .nav-tabs li a {
-    margin: 4vmin 0; } }
+    margin: 9px 0; } }
 
 @media only screen and (max-width: 760px) {
   header .navbar-nav li.open {
@@ -469,7 +469,7 @@ header .navbar-nav li .dropdown-menu {
       height: 175px; }
       #footer .footer-widget .container .site-map .cat dt {
         color: #fff; }
-      #footer .footer-widget .container .site-map .cat dd {
+      #footer .footer-widget .container .site-map .cat dd, #footer .footer-widget .container .site-map .cat dd a {
         white-space: nowrap;
         color: #ccc; }
   #footer .footer-widget .container .links {
@@ -549,60 +549,60 @@ header .navbar-nav li .dropdown-menu {
     background-image: url(../img/solution-banner-s.jpg);
     height: 45vw; } }
 
-.page-solutions-contact .banner {
+.page-business .banner {
   background: url(../img/solution-banner.jpg) no-repeat center center/cover;
   height: 31vw; }
-  .page-solutions-contact .banner .text {
+  .page-business .banner .text {
     position: absolute;
     bottom: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.5);
     width: 100%; }
-    .page-solutions-contact .banner .text .container h3 {
+    .page-business .banner .text .container h3 {
       color: #fff;
       margin: 1vw 0 0 0;
       font-weight: normal;
       font-size: 3vw; }
-    .page-solutions-contact .banner .text .container p {
+    .page-business .banner .text .container p {
       color: #84bae5;
       margin: 0 0 1.5vw 0;
       font-size: 1.5vw; }
 
-.page-products-cloud .banner {
+.page-business .banner {
   height: 50vw; }
-  .page-products-cloud .banner .banner-bg {
+  .page-business .banner .banner-bg {
     background: no-repeat center center/cover;
     height: 50vw;
     width: 100%; }
-  .page-products-cloud .banner .sub-nav {
+  .page-business .banner .sub-nav {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     overflow: hidden; }
-    .page-products-cloud .banner .sub-nav .container {
+    .page-business .banner .sub-nav .container {
       background: rgba(0, 0, 0, 0.5);
       position: relative; }
-      .page-products-cloud .banner .sub-nav .container:before {
+      .page-business .banner .sub-nav .container:before {
         background: rgba(0, 0, 0, 0.5);
         width: 50vw;
         position: absolute;
         right: 100%;
         padding-bottom: 10000px;
         margin-bottom: -10000px; }
-      .page-products-cloud .banner .sub-nav .container .content {
+      .page-business .banner .sub-nav .container .content {
         padding-bottom: 10000px;
         margin-bottom: -10000px; }
-        .page-products-cloud .banner .sub-nav .container .content h3 {
+        .page-business .banner .sub-nav .container .content h3 {
           color: #fff;
           margin: 1vw 0 0 0;
           font-weight: normal;
           font-size: 3vw; }
-        .page-products-cloud .banner .sub-nav .container .content p {
+        .page-business .banner .sub-nav .container .content p {
           color: #84bae5;
           margin: 0 0 1.5vw 0;
           font-size: 1.5vw; }
-        .page-products-cloud .banner .sub-nav .container .content .btn-free {
+        .page-business .banner .sub-nav .container .content .btn-free {
           background: #84bae5;
           margin-top: 2.2vw;
           float: right;
@@ -612,7 +612,7 @@ header .navbar-nav li .dropdown-menu {
           border-radius: 0;
           margin-right: -15px; }
 
-.page-products-cloud .btns ul {
+.page-business .btns ul {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -620,17 +620,17 @@ header .navbar-nav li .dropdown-menu {
   -ms-flex-pack: justify;
   justify-content: space-between;
   border: none; }
-  .page-products-cloud .btns ul li {
+  .page-business .btns ul li {
     -webkit-flex-grow: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
     background: #efeff0; }
-    .page-products-cloud .btns ul li a {
-      margin: 2vw 0;
+    .page-business .btns ul li a {
+      margin: 1vw 0;
       background: none;
       border: none;
       border-right: 1px solid #aaa;
-      height: 4vw;
+      height: 3vw;
       line-height: 1em;
       text-align: center;
       padding: 0;
@@ -649,43 +649,43 @@ header .navbar-nav li .dropdown-menu {
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
               flex-direction: column; }
-      .page-products-cloud .btns ul li a.non-br {
+      .page-business .btns ul li a.non-br {
         border-right: 0px solid #aaa; }
-    .page-products-cloud .btns ul li.active {
+    .page-business .btns ul li.active {
       background-color: #b5b6b6; }
-      .page-products-cloud .btns ul li.active a {
+      .page-business .btns ul li.active a {
         color: #fff; }
 
-.page-products-cloud .providing {
+.page-business .providing {
   background-color: #f7f7f8;
   padding: 7vw 0; }
-  .page-products-cloud .providing .bar-tab {
+  .page-business .providing .bar-tab {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
-    .page-products-cloud .providing .bar-tab .tab-item {
+    .page-business .providing .bar-tab .tab-item {
       -webkit-flex-grow: 1;
           -ms-flex-positive: 1;
               flex-grow: 1;
       text-align: center;
       width: 0; }
-      .page-products-cloud .providing .bar-tab .tab-item .tab-label {
+      .page-business .providing .bar-tab .tab-item .tab-label {
         display: block;
         color: #919191;
         margin-top: 2vw;
         white-space: nowrap;
         font-size: 1.5vw; }
-      .page-products-cloud .providing .bar-tab .tab-item .icon_img img {
+      .page-business .providing .bar-tab .tab-item .icon_img img {
         width: 50%; }
-  .page-products-cloud .providing .bar_title {
+  .page-business .providing .bar_title {
     padding: 0 3vw 3vw 0;
     display: inline-block;
     position: relative; }
-    .page-products-cloud .providing .bar_title h3 {
+    .page-business .providing .bar_title h3 {
       color: #595857;
       line-height: 1em;
       font-size: 2vw; }
-    .page-products-cloud .providing .bar_title:after {
+    .page-business .providing .bar_title:after {
       content: '';
       border-top: 1px solid #7b7b7b;
       position: absolute;
@@ -732,11 +732,11 @@ header .navbar-nav li .dropdown-menu {
     font-size: 18px; }
 
 @media only screen and (max-width: 760px) {
-  .page-products-cloud .banner {
+  .page-business .banner {
     height: auto; }
-    .page-products-cloud .banner .sub-nav {
+    .page-business .banner .sub-nav {
       position: static; }
-      .page-products-cloud .banner .sub-nav .container {
+      .page-business .banner .sub-nav .container {
         margin-left: 20%;
         width: 80%; } }
 
@@ -922,10 +922,10 @@ header .navbar-nav li .dropdown-menu {
   #page-contact .mb-5 {
     margin-bottom: 0em; } }
 
-#page-cloud .cloud div {
+.page-business .cloud div {
   position: relative;
   width: 100%; }
-  #page-cloud .cloud div a {
+  .page-business .cloud div a {
     position: absolute;
     background-color: #84bae5;
     top: 50%;

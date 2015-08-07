@@ -382,7 +382,7 @@
 								<?php foreach(get_posts(array('category_name'=>'news')) as $post){ ?>
 								<li class="item">
 									<div class="title clearfix">
-										<div class="pull-right"><?=get_the_date('', $post)?></div>
+										<div class="pull-right"><?=get_the_date('Y-m-d', $post)?></div>
 										<div class="pull-left"><?=get_the_title($post)?> <span class="arrow"></span></div>
 									</div>
 									<div class="content">
