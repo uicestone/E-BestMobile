@@ -8,33 +8,10 @@
 				<!-- Slide -->
 				<li data-delay="7000" data-transition="fade" data-slotamount="7" data-masterspeed="2000">
 					<div class="elements text tp-caption">
-						<!-- <div class="tp-caption tp-resizeme lfb" data-x="0" data-y="85" data-speed="1000" data-start="1000" data-easing="Power4.easeOut" data-endspeed="500" data-endeasing="Power1.easeIn" style="z-index: 4">
-							<img src="<?=get_stylesheet_directory_uri()?>/img/sections/slider/model.png" width="500" height="800" alt="" />
-						</div> -->
-						<h2 class="" > RETAIL<br>EXECUTION </h2>
-						<p>In an age of see it, one of the biggest challenges facing CPG companies today is shelf display and retail execution.</p>
-						<a href="#" class="btn btn-lightBlue">MORE <span class="icon"></span></a>
-						<!-- <h2 class="tp-caption tp-resizeme lft skewtotop title" data-x="462" data-y="311" data-speed="1000" data-start="1800" data-easing="Power4.easeOut" data-endspeed="500" data-endeasing="Power1.easeIn">
-							<strong>on orders of $99 or more</strong>
-						</h2>
-						<h2 class="tp-caption tp-resizeme lft skewtotop title bold red" data-x="462" data-y="381" data-speed="1000" data-start="1900" data-easing="Power4.easeOut" data-endspeed="500" data-endeasing="Power1.easeIn">
-							<strong>hurry up!</strong>
-						</h2>
-						<div class="tp-caption tp-resizeme customin customout" data-x="right" data-y="208" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="1200" data-start="2000" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 5">
-							<img src="<?=get_stylesheet_directory_uri()?>/img/sections/slider/offer.png" width="320" height="260" alt="" />
-						</div> -->
-					</div>
-					<img src="<?=get_stylesheet_directory_uri()?>/img/slider.jpg" alt="" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat" />
-				</li>
-				<!-- Slide Ends -->
-				<!-- Slide -->
-				<li data-delay="7000" data-transition="fade" data-slotamount="7" data-masterspeed="2000">
-					<div class="elements text tp-caption">
-						<h2 class="" > RETAIL<br>EXECUTION </h2>
+						<h2 class="">RETAIL<br>EXECUTION </h2>
 						<p>In an age of see it, one of the biggest challenges facing CPG companies today is shelf display and retail execution.</p>
 						<a href="#" class="btn btn-lightBlue">MORE <span class="icon"></span></a>
 					</div>
-
 					<img src="<?=get_stylesheet_directory_uri()?>/img/slider.jpg" alt="" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat" />
 				</li>
 				<!-- Slide Ends -->
@@ -45,13 +22,14 @@
 
 	<div class="free-trial">
 		<div class="content">
-			<p>FREE TRIAL ON THE CLOUD</p>
+			<a href="http://www.ebestsfa.com/" target="_blank"><p>FREE TRIAL ON THE CLOUD</p>
 			<div class="tow-floors">
 				<ul>
 					<li>eBest SFA</li>
 					<li>eBestSFA on Salesforce</li>
 				</ul>
 			</div>
+			</a>
 		</div>
 	</div>
 </section>
