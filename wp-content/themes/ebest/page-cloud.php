@@ -1,7 +1,7 @@
 <?php $page_class = 'page-business'; get_header(); the_post(); ?>
 
 <section class="banner">
-	<div class="banner-bg" style="background-image: url('<?=get_stylesheet_directory_uri()?>/img/cloud-banner.jpg');"></div>
+	<div class="banner-bg" style="background-image: url('<?=get_stylesheet_directory_uri()?>/img/cloud-banner.jpg?v=2');"></div>
 	<div class="sub-nav">
 		<div class="container">
 			<div class="content">

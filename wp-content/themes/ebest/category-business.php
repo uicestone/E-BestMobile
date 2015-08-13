@@ -1,6 +1,6 @@
 <?php global $page_class; $page_class = 'page-business'; get_header(); ?>
 
-<section class="banner">
+<section class="banner" style="background-image:url('<?=get_stylesheet_directory_uri() . '/img/' . $wp_query->query_vars['category_name']?>-banner.jpg')">
 	<div class="text">
 		<div class="container">
 			<h3><?php single_cat_title(); ?></h3>

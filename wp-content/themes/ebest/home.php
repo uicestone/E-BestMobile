@@ -330,7 +330,7 @@
 					<div class="tab-content">
 						<?php foreach(get_posts(array('category_name'=>'cloud', 'order'=>'ASC', 'posts_per_page'=>5)) as $index => $post){?>
 						<div id="<?=$post->post_name?>" class="tab-pane fade<?php if($index === 0){ ?> active<?php } ?> in">
-							<img src="<?=get_stylesheet_directory_uri()?>/img/cloud-slider.jpg">
+							<a href="<?=get_the_permalink($post->ID)?>"><?=get_the_post_thumbnail($post->ID, 'home-cloud-info')?></a>
 						</div>
 						<?php } ?>
 					</div>
@@ -357,7 +357,11 @@
 						<!-- Content -->
 						<div data-animation="fadeInDown" class="animated fadeInDown visible">
 							<ul class="list-group widget">
-								<?php foreach(get_posts(array('category_name'=>'news')) as $post){ ?>
+								<?php foreach(get_posts(array('category_name'=>'news', 'posts_per_page'=>-1)) as $index => $post){ ?>
+								<?php if($index && $index % 5 === 0){ ?>
+							</ul>
+							<ul class="list-group widget hide">
+								<?php } ?>
 								<li class="item">
 									<div class="title clearfix">
 										<div class="pull-right"><?=get_the_date('Y-m-d', $post)?></div>
@@ -372,13 +376,21 @@
 						</div>
 					</div>
 					<div class="col-xs-3 controls vertical-middle">
-						<span class="tp-leftarrow tparrows round"></span>
-						<span class="tp-rightarrow tparrows round"></span>
+						<span class="news-up tp-leftarrow tparrows round"></span>
+						<span class="news-down tp-rightarrow tparrows round"></span>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
+
+<script type="text">
+jQuery(function($){
+	$('.news-down').on('click', function(){
+		
+	});
+});
+</script>
 
 <?php get_footer(); ?>
