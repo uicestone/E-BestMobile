@@ -53,7 +53,7 @@
 									<!-- Title -->
 									<h4>Retail<br> Execution</h4></div>
 								<div class="mask-bottom">
-									<p></p>
+									<p>Retail execution helps to better manage sales by monitoring online and off-line activity.  The solution can be configured to fit your business needs.</p>
 								</div>
 							</div>
 						</div>
@@ -64,9 +64,9 @@
 									<!-- Icon -->
 									<i class="fa fa-magic"></i> 
 									<!-- Title -->
-									<h4>Magical <br>Animations</h4></div>
+									<h4>Direct Store<br>Delivery</h4></div>
 								<div class="mask-bottom">
-									<p></p>
+									<p>DSD solution help companies find the most efficient delivery execution, supports offline pricing, enables merchandising and sales support.</p>
 								</div>
 							</div>
 						</div>
@@ -79,7 +79,7 @@
 									<!-- Title -->
 									<h4>Trade<br>Promotion</h4></div>
 								<div class="mask-bottom">
-									<p></p></div>
+									<p>Trade promotion is fit for both traditional and modern channels of CPG industry, managing the whole process of promotion budget application, execution and verification through a complete promotion plan and expense setting.</p></div>
 							</div>
 						</div>
 						<!-- Special Feature Box 3 -->
@@ -91,7 +91,7 @@
 									<!-- Title -->
 									<h4>Order<br>Management</h4></div>
 								<div class="mask-bottom">
-									<p></p></div>
+									<p>order management system has streamlined this into a digital system with easy ordering, timely follow ups and approvals, and accurate records for order history. </p></div>
 							</div>
 						</div>
 						<!-- Special Feature Box 1 -->
@@ -103,7 +103,7 @@
 									<!-- Title -->
 									<h4>Supervisor</h4></div>
 								<div class="mask-bottom">
-									<p></p></div>
+									<p>The supervisor solution will help sales managers track sales growth efficiently and accurately. The manager will have complete control of their sales team and their team’s activities at any given point of time, helping the manager guide and train their team whenever and wherever needed.</p></div>
 							</div>
 						</div>
 						<!-- Special Feature Box 2 -->
@@ -119,7 +119,7 @@
 									<!-- Title -->
 									<h4>Store<br>Audit</h4></div>
 								<div class="mask-bottom">
-									<p></p></div>
+									<p>The iAudit execution management system helps companies manage the performance of product shelves in channel stores by bridging the gaps between business executives, sales, and terminal stores. </p></div>
 							</div>
 						</div>
 						<!-- Special Feature Box 3 -->
@@ -131,7 +131,7 @@
 									<!-- Title -->
 									<h4>Online to<br>Offline</h4></div>
 								<div class="mask-bottom">
-									<p></p></div>
+									<p>O2O Solution aims to help companies bridge business relations online and offline. O2O Solution comprehensively combines CRM, DMS and SFA systems online and offline to form a complete consumer database, add consumption scenarios, and streamline the customer's shopping experience.</p></div>
 							</div>
 						</div>
 						<div class="col-md-3 col-sm-6 animated fadeInRight visible" data-animation="fadeInRight">
@@ -142,7 +142,7 @@
 									<!-- Title -->
 									<h4>Distributor<br>Management</h4></div>
 								<div class="mask-bottom">
-									<p></p></div>
+									<p>DMS is designed to make sales process management and sales result management more simple and effective, it improves sales execution and increases sales revenue. </p></div>
 							</div>
 						</div>
 						<div class="col-md-3 col-sm-6 animated fadeInLeft visible" data-animation="fadeInLeft">
@@ -153,7 +153,7 @@
 									<!-- Title -->
 									<h4>Asset<br>Management</h4></div>
 								<div class="mask-bottom">
-									<p></p></div>
+									<p>asset management system is mostly used by the company‘s asset management team. The company can better manage the returnable and unreturnable assets such as refrigerators, vending machines and promotion display racks. </p></div>
 							</div>
 						</div>
 						<div class="col-md-3 col-sm-6 animated fadeInDown visible" data-animation="fadeInDown">
@@ -164,7 +164,7 @@
 									<!-- Title -->
 									<h4>Customer<br>Self Order</h4></div>
 								<div class="mask-bottom">
-									<p></p></div>
+									<p>Connect manufacturers, distributors and outlets with the customer self-order feature. Shop owners will have the option to self-order through the consolidated platform and will benefit from direct communications with manufactures and distributors.</p></div>
 							</div>
 						</div>
 					</div>
