@@ -17,7 +17,7 @@ var appMaster = {
 			Sticky 
 		--------------------- */
 		 if ($('#sticker').length) {
-			$("#sticker").sticky({topSpacing:0});
+			$("#sticker").sticky({topSpacing:$('#wpadminbar').length ? 32 : 0});
 		 }
 		/* --------------------------
 		Home Background Super Slider 
