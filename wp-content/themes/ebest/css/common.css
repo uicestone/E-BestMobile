@@ -839,71 +839,71 @@ header .navbar-nav li .dropdown-menu {
   .archive .content, .single-post .content {
     margin-bottom: 20px; } }
 
-#page-contact .map-msg {
+.page-business .map-msg {
   background-color: #efeff0;
   padding: 1em; }
-  #page-contact .map-msg ul {
+  .page-business .map-msg ul {
     overflow: hidden; }
-    #page-contact .map-msg ul .bl_gray {
+    .page-business .map-msg ul .bl_gray {
       border-left: 1px solid #c9cacb; }
-    #page-contact .map-msg ul li {
+    .page-business .map-msg ul li {
       float: left;
       width: 50%;
       color: #898989;
       padding: 0 0 0 2em; }
-      #page-contact .map-msg ul li div {
+      .page-business .map-msg ul li div {
         margin-bottom: 1.5em; }
-        #page-contact .map-msg ul li div p {
+        .page-business .map-msg ul li div p {
           margin: 0.1em 0; }
-      #page-contact .map-msg ul li .msg_title {
+      .page-business .map-msg ul li .msg_title {
         color: #182a88; }
-      #page-contact .map-msg ul li:first-child {
+      .page-business .map-msg ul li:first-child {
         padding-left: 1em; }
 
-#page-contact .tab_div {
+.page-business .tab_div {
   background-color: #c9cacb;
   margin-top: 2em; }
-  #page-contact .tab_div table {
+  .page-business .tab_div table {
     width: 100%; }
-    #page-contact .tab_div table tr {
+    .page-business .tab_div table tr {
       height: 2em;
       line-height: 2em;
       border: 1px solid #f2f2f2; }
-      #page-contact .tab_div table tr td {
+      .page-business .tab_div table tr td {
         height: 2em;
         line-height: 2em; }
-        #page-contact .tab_div table tr td label {
+        .page-business .tab_div table tr td label {
           display: block;
           position: relative;
           padding: 0 0.5em; }
-          #page-contact .tab_div table tr td label input {
+          .page-business .tab_div table tr td label input {
             display: inline-block; }
-          #page-contact .tab_div table tr td label span {
+          .page-business .tab_div table tr td label span {
             color: #bdbebe;
             padding-left: .5em; }
-          #page-contact .tab_div table tr td label .line {
+          .page-business .tab_div table tr td label .line {
             border-left: 1px solid #ececec;
             display: inline-block;
             height: 2.2em;
             position: absolute; }
-    #page-contact .tab_div table .bg_gray {
+    .page-business .tab_div table .bg_gray {
       background-color: #efeff0; }
-    #page-contact .tab_div table #first_name, #page-contact .tab_div table #last_name {
+    .page-business .tab_div table #first_name, .page-business .tab_div table #last_name {
       width: 48%; }
-    #page-contact .tab_div table .check {
+    .page-business .tab_div table .check {
       font-size: 12px; }
-    #page-contact .tab_div table .form-control {
+    .page-business .tab_div table .form-control {
       display: inline-block;
       background-color: transparent;
       color: #fff;
       border: 0px solid #ccc;
       box-shadow: inset 0 0px 0px transparent; }
-      #page-contact .tab_div table .form-control::-webkit-input-placeholder {
+      .page-business .tab_div table .form-control::-webkit-input-placeholder {
         color: #fff;
         font-size: 14px; }
-  #page-contact .tab_div .form-group {
+  .page-business .tab_div .form-group {
     background-color: #fff; }
-    #page-contact .tab_div .form-group button {
+    .page-business .tab_div .form-group button {
       background-color: #84bae5;
       color: #fff;
       width: 10em;
@@ -911,15 +911,15 @@ header .navbar-nav li .dropdown-menu {
       border-radius: 0; }
 
 @media only screen and (max-width: 760px) {
-  #page-contact .map-msg ul li {
+  .page-business .map-msg ul li {
     float: none;
     width: 100%;
     padding-left: .5em; }
-  #page-contact .map-msg ul .bl_gray {
+  .page-business .map-msg ul .bl_gray {
     border: 0px solid gray; }
-  #page-contact .mt_30 {
+  .page-business .mt_30 {
     margin-top: 0; }
-  #page-contact .mb-5 {
+  .page-business .mb-5 {
     margin-bottom: 0em; } }
 
 .page-business .cloud div {
