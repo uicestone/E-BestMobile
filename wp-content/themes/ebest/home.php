@@ -108,7 +108,7 @@
 						</div>
 						<!-- Special Feature Box 2 -->
 						<div class="col-md-6 col-sm-6 animated fadeInRight visible" data-animation="fadeInRight">
-							<img src="<?=get_stylesheet_directory_uri()?>/img/video.jpg">
+							<?=do_shortcode(get_posts('tag=home-solutions-video')[0]->post_content)?>
 						</div>
 						<!-- Special Feature Box 3 -->
 						<div class="col-md-3 col-sm-6 animated fadeInLeft visible" data-animation="fadeInLeft">
@@ -344,7 +344,7 @@
 	<div class="container-fluid who-we-are">
 		<div class="row">
 			<div class="col-md-6 no-pad animated fadeInLeft visible" data-animation="fadeInLeft">
-				<img src="<?=get_stylesheet_directory_uri()?>/img/video-big.jpg">
+				<?=do_shortcode(get_posts('tag=home-news-video')[0]->post_content)?>
 			</div>
 			<div class="col-md-6">
 				<div class="row">

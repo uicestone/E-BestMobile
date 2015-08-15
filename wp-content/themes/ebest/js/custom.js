@@ -1,6 +1,7 @@
 /* ---------------------
 	CUSTOM JS DOCUMENT 
 --------------------- */
+
 var appMaster = {
 	/* ---------------------
 		Page Loader 

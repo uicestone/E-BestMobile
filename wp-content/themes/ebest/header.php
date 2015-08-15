@@ -38,9 +38,8 @@
 		<link href="<?=get_stylesheet_directory_uri()?>/css/color.css" rel="stylesheet" />
 		<!-- common style -->
 		<link href="<?=get_stylesheet_directory_uri()?>/css/common.css" rel="stylesheet" />
-		
-		<script type="text/javascript" src="<?=get_stylesheet_directory_uri()?>/js/jquery.min.js"></script> 
 		<?php wp_head(); ?>
+		<script type="text/javascript">var $ = jQuery.noConflict();</script>
 	</head>
 	<body <?php global $page_class;	body_class(isset($page_class) ? $page_class : '') ?>>
 		<div id="page-front">		
