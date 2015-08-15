@@ -59,11 +59,11 @@
 				</div>
 				<div class="trial col-md-12 col-xs-6">
 					<div class="trial_list">
-						<p>FREE TRIAL ON THE CLOUD</p>
+						<a href="http://www.ebestsfa.com/" target="_blank"><p>FREE TRIAL ON THE CLOUD</p>
 						<div class="bg_lightblue">
 							<p class="bt_white">eBest SFA</p>
 							<P>eBestSFA on Salesforce</P>
-						</div>
+						</div></a>
 					</div>
 				</div>
 				<div class="clearfix"></div>
@@ -84,9 +84,7 @@
 					<?php endwhile; ?>
 					<div class="clearfix"></div>
 					<div class="page_list">
-						<div class="bg_blue"><span>&lt;</span></div>
-						<div class="bg_gray">1</div>
-						<div class="bg_blue"><span>&gt;</span></div>
+						<?=paginate_links(array('prev_text'=>'<', 'next_text'=>'>'))?>
 					</div>
 				</div>
 

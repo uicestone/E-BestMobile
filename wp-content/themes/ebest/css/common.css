@@ -761,19 +761,19 @@ header .navbar-nav li .dropdown-menu {
   .archive .tabs .unbor_bottom, .single-post .tabs .unbor_bottom {
     border: 0px solid #eee; }
 
-.archive .page_list, .single-post .page_list {
+.archive .page_list {
   text-align: center; }
-  .archive .page_list div, .single-post .page_list div {
+  .archive .page_list>a, .archive .page_list>span {
     display: inline-block;
     color: #fff;
+    border-radius: 50%;
+    margin: 0 10px; }
+  .archive .page_list .page-numbers {
     width: 40px;
     height: 40px;
     line-height: 40px;
-    border-radius: 50%;
-    margin: 0 10px; }
-  .archive .page_list .bg_blue, .single-post .page_list .bg_blue {
     background-color: #181d61; }
-  .archive .page_list .bg_gray, .single-post .page_list .bg_gray {
+  .archive .page_list .current {
     background-color: #c9cacb;
     width: 50px;
     height: 50px;

@@ -1,8 +1,8 @@
 "use strict";
 // setting
 window.ENV = {
-  host : 'http://www.skillbank.cn',
-  imgHost : 'http://skillbank.b0.upaiyun.com'
+  host : '',
+  imgHost : ''
 };
 
 var browser={
