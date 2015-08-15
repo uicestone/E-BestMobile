@@ -363,7 +363,7 @@ header .navbar-nav li .dropdown-menu {
           font-size: 0.9vw;
           color: #fff; }
           #page-front #services .container .inner > .row > .col-md-9 .special-feature .s-feature-box .mask-bottom p {
-            color: #fff; }
+            color: #fff; font-size: 14px; line-height: 1.3; }
         #page-front #services .container .inner > .row > .col-md-9 .special-feature .s-feature-box i {
           font-size: 3vw;
           line-height: 3vw; }
