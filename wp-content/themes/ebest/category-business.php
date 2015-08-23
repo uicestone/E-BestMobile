@@ -1,4 +1,4 @@
-<?php 
+<?php
 global $page_class; $page_class = 'page-business';
 get_header();
 add_action('parse_query', function($wp_query){
@@ -50,7 +50,7 @@ add_action('parse_query', function($wp_query){
 			</div>
 			<?php while(have_posts()): the_post(); ?>
 			<div id="<?=get_post(get_the_ID())->post_name?>" class="content col-sm-12 col-md-9" style="display:none">
-				<?php the_content(); ?>
+				<?=parse_tabs(wpautop(get_the_content()))?>
 			</div>
 			<?php endwhile; ?>
 		</div>
@@ -76,6 +76,7 @@ jQuery(function($){
 		$('.list-group-item').removeClass('active');
 		$('.list-group-item[href="' + target + '"]').addClass('active');
 	});
+	
 });
 </script>
 
