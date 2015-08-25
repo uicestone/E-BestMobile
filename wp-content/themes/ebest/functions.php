@@ -20,7 +20,7 @@ add_action('init', function(){
 function parse_tabs($content){
 	preg_match_all('/<h1.*?>(.*?)<\/h1>/', $content, $matches);
 	$titles = $matches[1];
-	if(count($titles < 3)){
+	if(count($titles) < 3){
 		echo $content;
 		return;
 	}
