@@ -13,7 +13,7 @@ add_action('parse_query', function($wp_query){
 	<div class="container">
 		<ul class="breadcrumb">
 			<li>
-				<a href="<?=site_url()?>">HOME </a> <span>》</span>
+				<a href="<?=site_url()?>">Home </a> <span>》</span>
 			</li>
 			<li>
 				<?php single_cat_title(); ?>
