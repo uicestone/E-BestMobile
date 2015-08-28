@@ -75,7 +75,7 @@
 			<div class="copyright">
 				<div class="container">
 					<div class="row">
-						&copy; 2015 eBest mobile. Creative Agency.
+						&copy; <?=date('Y')?> eBest mobile. All Rights Reserved.
 					</div>
 				</div>
 			</div>
