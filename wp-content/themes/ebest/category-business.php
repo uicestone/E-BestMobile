@@ -64,7 +64,7 @@ jQuery(function($){
 		$('.list-group-item[href="' + window.location.hash + '"]').addClass('active');
 	}
 	else{
-		$('.content:first').show();
+		$('.content:last').show();
 		$('.list-group-item:first').addClass('active');
 	}
 	$('.list-group-item').on('click', function(event){
