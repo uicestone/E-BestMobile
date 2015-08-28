@@ -172,13 +172,6 @@
 											<li>
 												<a href="<?=site_url()?>/category/news/">News</a> 
 												<!-- Portfolio Dropdown Menu -->
-												<ul class="dropdown-menu">
-													<?php foreach(get_categories(array('parent'=>get_category_by_slug('news')->cat_ID, 'hide_empty'=>false)) as $category){ ?>
-													<li>
-														<a href="<?=get_category_link($category)?>"><?=$category->cat_name?></a>
-													</li>
-													<?php } ?>
-												</ul>
 											</li>
 											<!-- Ends Widgets Block -->
 											<!-- Pages Mega Menu -->

@@ -24,20 +24,6 @@
 			<div class="sidebar col-sm-12 col-md-3">
 				<div class="widget">
 					<div class="widget-title">
-						<h3 class="title">Content</h3>
-					</div>
-					<div class="list-group">
-						<div class="row">
-							<div class="col-md-12 col-xs-6">
-								<?php foreach(get_categories(array('parent'=>get_the_category()[0]->cat_ID, 'hide_empty'=>false)) as $category){ ?>
-								<a href="<?=get_category_link($category)?>" class="list-group-item"><?=$category->cat_name?></a>
-								<?php } ?>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="widget">
-					<div class="widget-title">
 						<h3 class="title">Recent</h3>
 					</div>
 					<div class="list-group">
