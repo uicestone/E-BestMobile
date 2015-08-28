@@ -7,14 +7,7 @@ add_action('parse_query', function($wp_query){
 });
 ?>
 
-<section class="banner" style="background-image:url('<?=get_stylesheet_directory_uri() . '/img/' . $wp_query->query_vars['category_name']?>-banner.jpg')">
-	<div class="text">
-		<div class="container">
-			<h3><?php single_cat_title(); ?></h3>
-			<p><?=category_description()?></p>
-		</div>
-	</div>
-</section>
+<section class="banner" style="background-image:url('<?=get_stylesheet_directory_uri() . '/img/' . $wp_query->query_vars['category_name']?>-banner.jpg')"></section>
 
 <section class="breadcrumb-box">
 	<div class="container">
