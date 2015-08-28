@@ -113,7 +113,7 @@
 											<li class="">
 												<a href="<?=site_url()?>/products/">Products</a>
 												<ul class="dropdown-menu">
-													<?php foreach(get_posts(array('category_name'=>'products', 'order'=>'ASC')) as $post){ ?>
+													<?php foreach(get_posts(array('category_name'=>'products', 'order'=>'ASC', 'posts_per_page'=>-1)) as $post){ ?>
 													<li>
 														<a href="<?=site_url()?>/category/products/#<?=$post->post_name?>"><?=$post->post_title?></a>
 													</li>
@@ -126,7 +126,8 @@
 												<a href="<?=site_url()?>/cloud/">Cloud</a> 
 												<!-- Portfolio Dropdown Menu -->
 												<ul class="dropdown-menu">
-													<?php foreach(get_posts(array('category_name'=>'cloud', 'order'=>'ASC')) as $post){ ?>
+													<?php foreach(get_posts(array('category_name'=>'cloud', 'order'=>'ASC', 'posts_per_page'=>-1)) as $post){ ?>
+													<?php if($post->post_name === 'overview') continue;?>
 													<li>
 														<a href="<?=site_url()?>/category/cloud/#<?=$post->post_name?>"><?=$post->post_title?></a>
 													</li>
@@ -140,7 +141,7 @@
 												<a href="<?=site_url()?>/category/industries/">Industries</a> 
 												<!-- Portfolio Dropdown Menu -->
 												<ul class="dropdown-menu">
-													<?php foreach(get_posts(array('category_name'=>'industries', 'order'=>'ASC')) as $post){ ?>
+													<?php foreach(get_posts(array('category_name'=>'industries', 'order'=>'ASC', 'posts_per_page'=>-1)) as $post){ ?>
 													<li>
 														<a href="<?=site_url()?>/category/industries/#<?=$post->post_name?>"><?=$post->post_title?></a>
 													</li>
@@ -151,7 +152,7 @@
 												<a href="<?=site_url()?>/category/customer/">Customer</a> 
 												<!-- Portfolio Dropdown Menu -->
 												<ul class="dropdown-menu">
-													<?php foreach(get_posts(array('category_name'=>'customer', 'order'=>'ASC')) as $post){ ?>
+													<?php foreach(get_posts(array('category_name'=>'customer', 'order'=>'ASC', 'posts_per_page'=>-1)) as $post){ ?>
 													<li>
 														<a href="<?=site_url()?>/category/customer/#<?=$post->post_name?>"><?=$post->post_title?></a>
 													</li>
@@ -162,7 +163,7 @@
 												<a href="<?=site_url()?>/category/service/">Service</a> 
 												<!-- Portfolio Dropdown Menu -->
 												<ul class="dropdown-menu">
-													<?php foreach(get_posts(array('category_name'=>'service', 'order'=>'ASC')) as $post){ ?>
+													<?php foreach(get_posts(array('category_name'=>'service', 'order'=>'ASC', 'posts_per_page'=>-1)) as $post){ ?>
 													<li>
 														<a href="<?=site_url()?>/category/service/#<?=$post->post_name?>"><?=$post->post_title?></a>
 													</li>
@@ -179,7 +180,7 @@
 												<a href="<?=site_url()?>/category/company/">Company</a> 
 												<!-- Portfolio Dropdown Menu -->
 												<ul class="dropdown-menu">
-													<?php foreach(get_posts(array('category_name'=>'company', 'order'=>'ASC')) as $post){ ?>
+													<?php foreach(get_posts(array('category_name'=>'company', 'order'=>'ASC', 'posts_per_page'=>-1)) as $post){ ?>
 													<li>
 														<a href="<?=site_url()?>/category/company/#<?=$post->post_name?>"><?=$post->post_title?></a>
 													</li>

@@ -4,47 +4,47 @@
 					<div class="site-map">
 						<div class="cat">
 							<dl>
-								<dt>Products</dt>
-								<?php foreach(get_posts(array('category_name'=>'products')) as $post){ ?>
+								<dt><a href="<?=site_url()?>/products/">Products</a></a></dt>
+								<?php foreach(get_posts(array('category_name'=>'products', 'order'=>'asc', 'posts_per_page'=>-1)) as $post){ ?>
 								<dd><a href="<?=get_the_permalink($post)?>"><?=get_the_title($post->id)?></a></dd>
 								<?php } ?>
 							</dl>
 						</div>
 						<div class="cat">
 							<dl>
-								<dt>Cloud</dt>
-								<?php foreach(get_posts(array('category_name'=>'cloud')) as $post){ ?>
+								<dt><a href="<?=site_url()?>/cloud/">Cloud</a></a></dt>
+								<?php foreach(get_posts(array('category_name'=>'cloud', 'order'=>'asc', 'posts_per_page'=>-1)) as $post){ ?>
 								<dd><a href="<?=get_the_permalink($post)?>"><?=get_the_title($post->id)?></a></dd>
 								<?php } ?>
 							</dl>
 						</div>
 						<div class="cat">
 							<dl>
-								<dt>Industries</dt>
-								<?php foreach(get_posts(array('category_name'=>'industries')) as $post){ ?>
+								<dt><a href="<?=site_url()?>/category/industries/">Industries</a></a></dt>
+								<?php foreach(get_posts(array('category_name'=>'industries', 'order'=>'asc', 'posts_per_page'=>-1)) as $post){ ?>
 								<dd><a href="<?=get_the_permalink($post)?>"><?=get_the_title($post->id)?></a></dd>
 								<?php } ?>
 							</dl>
 						</div>
 						<div class="cat">
 							<dl>
-								<dt>Customer</dt>
-								<?php foreach(get_posts(array('category_name'=>'customer')) as $post){ ?>
+								<dt><a href="<?=site_url()?>/category/customer/">Customer</a></dt>
+								<?php foreach(get_posts(array('category_name'=>'customer', 'order'=>'asc', 'posts_per_page'=>-1)) as $post){ ?>
 								<dd><?=get_the_title($post->id)?></a></dd>
 								<?php } ?>
 							</dl>
 						</div>
 						<div class="cat">
 							<dl>
-								<dt>Service</dt>
-								<?php foreach(get_posts(array('category_name'=>'service')) as $post){ ?>
+								<dt><a href="<?=site_url()?>/category/service/">Service</a></dt>
+								<?php foreach(get_posts(array('category_name'=>'service', 'order'=>'asc', 'posts_per_page'=>-1)) as $post){ ?>
 								<dd><a href="<?=get_the_permalink($post)?>"><?=get_the_title($post->id)?></a></dd>
 								<?php } ?>
 							</dl>
 						</div>
 						<div class="cat">
 							<dl>
-								<dt>News</dt>
+								<dt><a href="<?=site_url()?>/category/news/">News</dt>
 								<?php foreach(get_categories(array('parent'=>get_category_by_slug('news')->cat_ID, 'hide_empty'=>false)) as $category){ ?>
 								<dd><a href="<?=get_category_link($category)?>"><?=$category->cat_name?></a></dd>
 								<?php } ?>
@@ -52,8 +52,8 @@
 						</div>
 						<div class="cat">
 							<dl>
-								<dt>Company</dt>
-								<?php foreach(get_posts(array('category_name'=>'company')) as $post){ ?>
+								<dt><a href="<?=site_url()?>/category/company/">Company</a></dt>
+								<?php foreach(get_posts(array('category_name'=>'company', 'order'=>'asc', 'posts_per_page'=>-1)) as $post){ ?>
 								<dd><a href="<?=get_the_permalink($post)?>"><?=get_the_title($post->id)?></a></dd>
 								<?php } ?>
 							</dl>

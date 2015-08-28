@@ -223,7 +223,7 @@ header .navbar-nav li .dropdown-menu {
       line-height: 4vw;
       text-align: center;
       padding: 0;
-      font-size: 22px;
+      font-size: 18px;
       color: #999; }
       .tabs .nav-tabs li a .active:hover, .tabs .nav-tabs li a .active:active {
         background: none; }
@@ -398,8 +398,8 @@ header .navbar-nav li .dropdown-menu {
 
 #page-front #news .news-list ul.list-group li.item {
   margin: 0 0 10px; }
-  #page-front #news .news-list ul.list-group li.item .title {
-    font-size: 18px;
+  #page-front #news .news-list ul.list-group li.item .title, #page-front #news .news-list ul.list-group li.item .title a {
+    font-size: 15px;
     color: #84bae5;
     margin: 0 0 10px; }
     #page-front #news .news-list ul.list-group li.item .title .arrow {
@@ -467,7 +467,7 @@ header .navbar-nav li .dropdown-menu {
       width: 200px;
       font-size: 14px;
       height: 175px; }
-      #footer .footer-widget .container .site-map .cat dt {
+      #footer .footer-widget .container .site-map .cat dt, #footer .footer-widget .container .site-map .cat dt a {
         color: #fff; }
       #footer .footer-widget .container .site-map .cat dd, #footer .footer-widget .container .site-map .cat dd a {
         white-space: nowrap;

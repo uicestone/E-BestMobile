@@ -321,14 +321,14 @@
 			<div class="col-md-12">
 				<div class="tabs">
 					<ul class="nav nav-tabs">
-						<?php foreach(get_posts(array('category_name'=>'cloud', 'order'=>'ASC', 'posts_per_page'=>5)) as $index => $post){?>
+						<?php foreach(get_posts(array('category_name'=>'cloud', 'order'=>'ASC', 'posts_per_page'=>5, 'offset'=>1)) as $index => $post){?>
 						<li<?php if($index === 0){ ?> class="active"<?php } ?>>
 							<a data-toggle="tab" href="#<?=$post->post_name?>" aria-expanded="true"> <?=$post->post_title?></a>
 						</li>
 						<?php } ?>
 					</ul>
 					<div class="tab-content">
-						<?php foreach(get_posts(array('category_name'=>'cloud', 'order'=>'ASC', 'posts_per_page'=>5)) as $index => $post){?>
+						<?php foreach(get_posts(array('category_name'=>'cloud', 'order'=>'ASC', 'posts_per_page'=>5, 'offset'=>1)) as $index => $post){?>
 						<div id="<?=$post->post_name?>" class="tab-pane fade<?php if($index === 0){ ?> active<?php } ?> in">
 							<a href="<?=get_the_permalink($post->ID)?>"><?=get_the_post_thumbnail($post->ID, 'home-cloud-info')?></a>
 						</div>
@@ -365,7 +365,7 @@
 								<li class="item">
 									<div class="title clearfix">
 										<div class="pull-right"><?=get_the_date('Y-m-d', $post)?></div>
-										<div class="pull-left"><?=get_the_title($post)?> <span class="arrow"></span></div>
+										<div class="pull-left"><a href="<?=get_the_permalink($post->ID)?>"><?=get_the_title($post)?> <span class="arrow"></span></a></div>
 									</div>
 									<div class="content">
 										<?=$post->post_excerpt;?>
