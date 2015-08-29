@@ -321,14 +321,14 @@
 			<div class="col-md-12">
 				<div class="tabs">
 					<ul class="nav nav-tabs">
-						<?php foreach(get_posts(array('category_name'=>'cloud', 'order'=>'ASC', 'posts_per_page'=>5, 'offset'=>1)) as $index => $post){?>
+						<?php foreach(get_posts(array('category_name'=>'cloud-' . LANG, 'order'=>'ASC', 'posts_per_page'=>5, 'offset'=>1)) as $index => $post){?>
 						<li<?php if($index === 0){ ?> class="active"<?php } ?>>
 							<a data-toggle="tab" href="#<?=$post->post_name?>" aria-expanded="true"> <?=$post->post_title?></a>
 						</li>
 						<?php } ?>
 					</ul>
 					<div class="tab-content">
-						<?php foreach(get_posts(array('category_name'=>'cloud', 'order'=>'ASC', 'posts_per_page'=>5, 'offset'=>1)) as $index => $post){?>
+						<?php foreach(get_posts(array('category_name'=>'cloud-' . LANG, 'order'=>'ASC', 'posts_per_page'=>5, 'offset'=>1)) as $index => $post){?>
 						<div id="<?=$post->post_name?>" class="tab-pane fade<?php if($index === 0){ ?> active<?php } ?> in">
 							<a href="<?=get_the_permalink($post->ID)?>"><?=get_the_post_thumbnail($post->ID, 'home-cloud-info')?></a>
 						</div>
@@ -352,12 +352,12 @@
 
 						<div class="section-title text-left animated fadeInUp visible" data-animation="fadeInUp">
 							<!-- Title -->
-							<h2 class="title">NEWS</h2>
+							<h2 class="title"><?=strtoupper(pll__('News'))?></h2>
 						</div>
 						<!-- Content -->
 						<div data-animation="fadeInDown" class="animated fadeInDown visible">
 							<ul class="list-group widget">
-								<?php foreach(get_posts(array('category_name'=>'news', 'posts_per_page'=>-1)) as $index => $post){ ?>
+								<?php foreach(get_posts(array('category_name'=>'news-' . LANG, 'posts_per_page'=>-1)) as $index => $post){ ?>
 								<?php if($index && $index % 5 === 0){ ?>
 							</ul>
 							<ul class="list-group widget hide">
