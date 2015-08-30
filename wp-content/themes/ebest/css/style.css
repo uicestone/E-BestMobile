@@ -2264,6 +2264,7 @@ p.tp-caption.button-block a{
 	margin: 2vw 0;
 	position:relative;
   height: 2em;
+  padding: 0 1.5vw;
 }
 .special-feature .mask-top{
 	width:100%;

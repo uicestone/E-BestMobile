@@ -4,47 +4,47 @@
 					<div class="site-map">
 						<div class="cat">
 							<dl>
-								<dt><a href="<?=site_url()?>/products/"><?=get_category_by_slug('products-' . LANG)->name?></a></a></dt>
-								<?php foreach(get_posts(array('category_name'=>'products-' . LANG, 'order'=>'asc', 'posts_per_page'=>-1)) as $post){ ?>
+								<dt><a href="<?=site_url()?>/products/"><?=get_category_by_slug('products' . CAT_LANG_SUFFIX)->name?></a></a></dt>
+								<?php foreach(get_posts(array('category_name'=>'products' . CAT_LANG_SUFFIX, 'order'=>'asc', 'posts_per_page'=>-1)) as $post){ ?>
 								<dd><a href="<?=get_the_permalink($post)?>"><?=get_the_title($post->id)?></a></dd>
 								<?php } ?>
 							</dl>
 						</div>
 						<div class="cat">
 							<dl>
-								<dt><a href="<?=site_url()?>/cloud/"><?=get_category_by_slug('cloud-' . LANG)->name?></a></a></dt>
-								<?php foreach(get_posts(array('category_name'=>'cloud-' . LANG, 'order'=>'asc', 'posts_per_page'=>-1)) as $post){ ?>
+								<dt><a href="<?=site_url()?>/cloud/"><?=get_category_by_slug('cloud' . CAT_LANG_SUFFIX)->name?></a></a></dt>
+								<?php foreach(get_posts(array('category_name'=>'cloud' . CAT_LANG_SUFFIX, 'order'=>'asc', 'posts_per_page'=>-1)) as $post){ ?>
 								<dd><a href="<?=get_the_permalink($post)?>"><?=get_the_title($post->id)?></a></dd>
 								<?php } ?>
 							</dl>
 						</div>
 						<div class="cat">
 							<dl>
-								<dt><a href="<?=site_url()?>/category/industries/"><?=get_category_by_slug('industries-' . LANG)->name?></a></a></dt>
-								<?php foreach(get_posts(array('category_name'=>'industries-' . LANG, 'order'=>'asc', 'posts_per_page'=>-1)) as $post){ ?>
+								<dt><a href="<?=site_url()?>/category/industries/"><?=get_category_by_slug('industries' . CAT_LANG_SUFFIX)->name?></a></a></dt>
+								<?php foreach(get_posts(array('category_name'=>'industries' . CAT_LANG_SUFFIX, 'order'=>'asc', 'posts_per_page'=>-1)) as $post){ ?>
 								<dd><a href="<?=get_the_permalink($post)?>"><?=get_the_title($post->id)?></a></dd>
 								<?php } ?>
 							</dl>
 						</div>
 						<div class="cat">
 							<dl>
-								<dt><a href="<?=site_url()?>/category/customer/"><?=get_category_by_slug('customer-' . LANG)->name?></a></dt>
-								<?php foreach(get_posts(array('category_name'=>'customer-' . LANG, 'order'=>'asc', 'posts_per_page'=>-1)) as $post){ ?>
+								<dt><a href="<?=site_url()?>/category/customer/"><?=get_category_by_slug('customer' . CAT_LANG_SUFFIX)->name?></a></dt>
+								<?php foreach(get_posts(array('category_name'=>'customer' . CAT_LANG_SUFFIX, 'order'=>'asc', 'posts_per_page'=>-1)) as $post){ ?>
 								<dd><?=get_the_title($post->id)?></a></dd>
 								<?php } ?>
 							</dl>
 						</div>
 						<div class="cat">
 							<dl>
-								<dt><a href="<?=site_url()?>/category/service/"><?=get_category_by_slug('service-' . LANG)->name?></a></dt>
-								<?php foreach(get_posts(array('category_name'=>'service-' . LANG, 'order'=>'asc', 'posts_per_page'=>-1)) as $post){ ?>
+								<dt><a href="<?=site_url()?>/category/service/"><?=get_category_by_slug('service' . CAT_LANG_SUFFIX)->name?></a></dt>
+								<?php foreach(get_posts(array('category_name'=>'service' . CAT_LANG_SUFFIX, 'order'=>'asc', 'posts_per_page'=>-1)) as $post){ ?>
 								<dd><a href="<?=get_the_permalink($post)?>"><?=get_the_title($post->id)?></a></dd>
 								<?php } ?>
 							</dl>
 						</div>
 						<div class="cat">
 							<dl>
-								<dt><a href="<?=site_url()?>/category/news/"><?=get_category_by_slug('news-' . LANG)->name?></dt>
+								<dt><a href="<?=site_url()?>/category/news/"><?=get_category_by_slug('news' . CAT_LANG_SUFFIX)->name?></dt>
 								<?php foreach(get_categories(array('parent'=>get_category_by_slug('news')->cat_ID, 'hide_empty'=>false)) as $category){ ?>
 								<dd><a href="<?=get_category_link($category)?>"><?=$category->cat_name?></a></dd>
 								<?php } ?>
@@ -52,8 +52,8 @@
 						</div>
 						<div class="cat">
 							<dl>
-								<dt><a href="<?=site_url()?>/category/company/"><?=get_category_by_slug('company-' . LANG)->name?></a></dt>
-								<?php foreach(get_posts(array('category_name'=>'company-' . LANG, 'order'=>'asc', 'posts_per_page'=>-1)) as $post){ ?>
+								<dt><a href="<?=site_url()?>/category/company/"><?=get_category_by_slug('company' . CAT_LANG_SUFFIX)->name?></a></dt>
+								<?php foreach(get_posts(array('category_name'=>'company' . CAT_LANG_SUFFIX, 'order'=>'asc', 'posts_per_page'=>-1)) as $post){ ?>
 								<dd><a href="<?=get_the_permalink($post)?>"><?=get_the_title($post->id)?></a></dd>
 								<?php } ?>
 							</dl>

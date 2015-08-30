@@ -44,7 +44,16 @@ function parse_tabs($content, $post_title){
 <?php
 }
 
-define('LANG', pll_current_language('slug'));
+add_action('init', function(){
+	define('LANG', pll_current_language('slug'));
+	define('CAT_LANG_SUFFIX', pll_current_language('slug') === pll_default_language('slug') ? '' : '-' . LANG);
 
-pll_register_string('home', 'Home');
-pll_register_string('news', 'News');
+	pll_register_string('more', 'More');
+	pll_register_string('home', 'Home');
+	pll_register_string('news', 'News');
+	pll_register_string('home-headline', 'RETAIL<br>EXECUTION');
+	pll_register_string('home-headline-excerpt', 'In an age of see it, one of the biggest challenges facing CPG companies today is shelf display and retail execution.');
+	pll_register_string('eBest SFA', 'eBest SFA');
+	pll_register_string('eBestSFA on Salesforce', 'eBestSFA on Salesforce');
+	pll_register_string('free-trial', 'FREE TRIAL ON THE CLOUD');
+});
