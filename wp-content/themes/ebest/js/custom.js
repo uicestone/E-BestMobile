@@ -1279,7 +1279,9 @@ $(window).scroll(function() {
 
 function goToTitle() {
   if (!$(".main-content").length) return;
-  var top = $(".main-content").offset().top - 165 + 32;
+  var wpadminbarHeight = $("#wpadminbar").length ? $("#wpadminbar").height() : 0;
+  var stickerHeight = $("#sticker").height();
+  var top = $(".main-content").offset().top - stickerHeight - wpadminbarHeight;
   $("body").scrollTop( top )
 }
 
