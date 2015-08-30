@@ -1267,17 +1267,27 @@ function MapLoadScript() {
 var header = jQuery('#slider-section'),
       headerPos = header.offset();
         
-  $(window).scroll(function() {
-	  if( $(".side-nav").length != 0 ) {
-      if( $(this).scrollTop() > headerPos.top+header.height() ) {
-          $('#sticky').addClass('nav-fixed').fadeIn('medium');
-      } else {
-          $('#sticky').removeClass('nav-fixed').fadeIn('medium');
-	  }
-      }
+$(window).scroll(function() {
+  if( $(".side-nav").length != 0 ) {
+    if( $(this).scrollTop() > headerPos.top+header.height() ) {
+        $('#sticky').addClass('nav-fixed').fadeIn('medium');
+    } else {
+        $('#sticky').removeClass('nav-fixed').fadeIn('medium');
+    }
+  }
 });
+
+function goToTitle() {
+  if (!$(".main-content").length) return;
+  var top = $(".main-content").offset().top - 165 + 32;
+  $("body").scrollTop( top )
+}
+
 
 $(window).load(function() {
 	appMaster.hiddenFooter();	
 	appMaster.masonryGrid();
+  goToTitle();
+
+
 });
