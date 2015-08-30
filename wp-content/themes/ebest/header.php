@@ -56,11 +56,11 @@
 							<ul class="nav navbar-nav">
 								<!-- Top Language -->
 								<li class="top-parent">
-									<a href="#">简体中文</a>
+									<a href="<?=site_url()?>/cn/"<?php if(LANG === 'cn'){ ?> class="lightBlue"<?php } ?>>简体中文</a>
 								</li>
 								<!-- Top Contact -->
 								<li class="top-parent">
-									<a href="#" class="lightBlue">English</a>
+									<a href="<?=site_url()?>"<?php if(LANG === 'en'){ ?> class="lightBlue"<?php } ?>>English</a>
 								</li>
 							</ul>
 							<!-- Top Social Icon -->
@@ -106,14 +106,14 @@
 										<ul class="nav navbar-nav" data-sm-skip-collapsible-behavior="true">
 											<!-- Home  Mega Menu -->
 											<li class="">
-												<a href="<?=site_url()?>">Home</a>
+												<a href="<?=site_url()?>"><?=pll_e('Home')?></a>
 											</li>
 											<!-- Mega Menu Ends -->
 											<!-- Pages Mega Menu -->
 											<li class="">
-												<a href="<?=site_url()?>/products/">Products</a>
+												<a href="<?=site_url()?>/products/"><?=get_category_by_slug('products-' . LANG)->name?></a>
 												<ul class="dropdown-menu">
-													<?php foreach(get_posts(array('category_name'=>'products', 'order'=>'ASC', 'posts_per_page'=>-1)) as $post){ ?>
+													<?php foreach(get_posts(array('category_name'=>'products-' . LANG, 'order'=>'ASC', 'posts_per_page'=>-1)) as $post){ ?>
 													<li>
 														<a href="<?=site_url()?>/category/products/#<?=$post->post_name?>"><?=$post->post_title?></a>
 													</li>
@@ -123,10 +123,10 @@
 											<!-- Pages Menu Ends -->
 											<!-- Portfolio Menu -->
 											<li>
-												<a href="<?=site_url()?>/cloud/">Cloud</a> 
+												<a href="<?=site_url()?>/cloud/"><?=get_category_by_slug('cloud-' . LANG)->name?></a> 
 												<!-- Portfolio Dropdown Menu -->
 												<ul class="dropdown-menu">
-													<?php foreach(get_posts(array('category_name'=>'cloud', 'order'=>'ASC', 'posts_per_page'=>-1)) as $post){ ?>
+													<?php foreach(get_posts(array('category_name'=>'cloud-' . LANG, 'order'=>'ASC', 'posts_per_page'=>-1)) as $post){ ?>
 													<?php if($post->post_name === 'overview') continue;?>
 													<li>
 														<a href="<?=site_url()?>/category/cloud/#<?=$post->post_name?>"><?=$post->post_title?></a>
@@ -138,10 +138,10 @@
 											<!-- Portfolio Menu -->
 											<!-- Shop Menu -->
 											<li>
-												<a href="<?=site_url()?>/category/industries/">Industries</a> 
+												<a href="<?=site_url()?>/category/industries/"><?=get_category_by_slug('industries-' . LANG)->name?></a> 
 												<!-- Portfolio Dropdown Menu -->
 												<ul class="dropdown-menu">
-													<?php foreach(get_posts(array('category_name'=>'industries', 'order'=>'ASC', 'posts_per_page'=>-1)) as $post){ ?>
+													<?php foreach(get_posts(array('category_name'=>'industries-' . LANG, 'order'=>'ASC', 'posts_per_page'=>-1)) as $post){ ?>
 													<li>
 														<a href="<?=site_url()?>/category/industries/#<?=$post->post_name?>"><?=$post->post_title?></a>
 													</li>
@@ -149,10 +149,10 @@
 												</ul>
 											</li>
 											<li>
-												<a href="<?=site_url()?>/category/customer/">Customer</a> 
+												<a href="<?=site_url()?>/category/customer/"><?=get_category_by_slug('customer-' . LANG)->name?></a> 
 												<!-- Portfolio Dropdown Menu -->
 												<ul class="dropdown-menu">
-													<?php foreach(get_posts(array('category_name'=>'customer', 'order'=>'ASC', 'posts_per_page'=>-1)) as $post){ ?>
+													<?php foreach(get_posts(array('category_name'=>'customer-' . LANG, 'order'=>'ASC', 'posts_per_page'=>-1)) as $post){ ?>
 													<li>
 														<a href="<?=site_url()?>/category/customer/#<?=$post->post_name?>"><?=$post->post_title?></a>
 													</li>
@@ -160,10 +160,10 @@
 												</ul>
 											</li>
 											<li>
-												<a href="<?=site_url()?>/category/service/">Service</a> 
+												<a href="<?=site_url()?>/category/service/"><?=get_category_by_slug('service-' . LANG)->name?></a> 
 												<!-- Portfolio Dropdown Menu -->
 												<ul class="dropdown-menu">
-													<?php foreach(get_posts(array('category_name'=>'service', 'order'=>'ASC', 'posts_per_page'=>-1)) as $post){ ?>
+													<?php foreach(get_posts(array('category_name'=>'service-' . LANG, 'order'=>'ASC', 'posts_per_page'=>-1)) as $post){ ?>
 													<li>
 														<a href="<?=site_url()?>/category/service/#<?=$post->post_name?>"><?=$post->post_title?></a>
 													</li>
@@ -171,16 +171,16 @@
 												</ul>
 											</li>
 											<li>
-												<a href="<?=site_url()?>/category/news/">News</a> 
+												<a href="<?=site_url()?>/category/news/"><?=get_category_by_slug('news-' . LANG)->name?></a> 
 												<!-- Portfolio Dropdown Menu -->
 											</li>
 											<!-- Ends Widgets Block -->
 											<!-- Pages Mega Menu -->
 											<li class="">
-												<a href="<?=site_url()?>/category/company/">Company</a> 
+												<a href="<?=site_url()?>/category/company/"><?=get_category_by_slug('company-' . LANG)->name?></a> 
 												<!-- Portfolio Dropdown Menu -->
 												<ul class="dropdown-menu">
-													<?php foreach(get_posts(array('category_name'=>'company', 'order'=>'ASC', 'posts_per_page'=>-1)) as $post){ ?>
+													<?php foreach(get_posts(array('category_name'=>'company-' . LANG, 'order'=>'ASC', 'posts_per_page'=>-1)) as $post){ ?>
 													<li>
 														<a href="<?=site_url()?>/category/company/#<?=$post->post_name?>"><?=$post->post_title?></a>
 													</li>

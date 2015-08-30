@@ -43,3 +43,8 @@ function parse_tabs($content, $post_title){
 </div>
 <?php
 }
+
+define('LANG', pll_current_language('slug'));
+
+pll_register_string('home', 'Home');
+pll_register_string('news', 'News');
