@@ -56,6 +56,7 @@
 					// $modal.find(".wp-video-shortcode").mediaelementplayer( settings ).show();
 					$modal.find(".wp-video-shortcode").attr("id", "modal-video-" + i).show()
 					player = new MediaElementPlayer( "#modal-video-" + i, settings);
+					// player.play();
 				})
 
 				$modal.on('hidden.bs.modal', function(e) {
