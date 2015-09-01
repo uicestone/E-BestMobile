@@ -28,6 +28,12 @@
 			}
 		};
 
+		// settings.pluginWidth = 480;
+		// settings.pluginHeight = 240;
+		// settings.defaultVideoWidth = 480;
+		// settings.defaultVideoHeight = 240;
+		settings.enableAutosize = false;
+
 		var tmp = '<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">' +
 '		  <div class="modal-dialog">' +
 '		    <div class="modal-content">' +
@@ -35,37 +41,44 @@
 '		      </div>' +
 '		    </div>' +
 '		  </div>' +
-		'</div>';
+'		</div>';
 
+		function initModal(i) {
+			return function() {
+				var $video = $(this).parent().find("video").clone(),
+						$modal = $(tmp).attr("id", "video-" + i ),
+						player;
+				$modal.find('.modal-body').html($video)
+					.end().appendTo('body').modal()
 
-		// $('.wp-audio-shortcode, .wp-video-shortcode').mediaelementplayer( settings );
-		$('.wp-audio-shortcode, .wp-video-shortcode').each(function (i) {
-			var src = $(this).attr("poster")
-			var $img = $("<img class='bg' src=" + src + " />")
-			var $overlay = $('<div class="mejs-overlay mejs-layer mejs-overlay-play"><div class="mejs-overlay-button"></div></div>')
+				// fire only once
+				$modal.one('shown.bs.modal', function() {
+					// $modal.find(".wp-video-shortcode").mediaelementplayer( settings ).show();
+					$modal.find(".wp-video-shortcode").attr("id", "modal-video-" + i).show()
+					player = new MediaElementPlayer( "#modal-video-" + i, settings);
+				})
+
+				$modal.on('hidden.bs.modal', function(e) {
+					player.pause();
+				})
+			}
+		}
+
+		function handleVideo(i) {
+			var src = $(this).attr("poster"),
+					$img = $("<img class='bg' src=" + src + " />"),
+					$overlay = $('<div class="mejs-overlay mejs-layer mejs-overlay-play"><div class="mejs-overlay-button"></div></div>');
 			$(this).hide().before($img).before($overlay)
-			$overlay.on("click", function(e){
-				var $video = $(this).parent().find("video").clone().show();
-				if ($("#video-" + i).length) {
-					// if modal is inited, show it 
-					$("#video-" + i).modal('show')
-				} else {
-					// init modal
-					var $modal = $(tmp).attr("id", "video-" + i );
-					$modal.find('.modal-body').html($video)
-						.end().appendTo('body').modal()
 
-					// $modal.find(".wp-video-shortcode").mediaelementplayer( settings );
-					$modal.find(".wp-video-shortcode").attr("id", "modal-video-" + i)
-					var player = new MediaElementPlayer( "#modal-video-" + i, settings);
-					// player.play();
-					$modal.on('hide.bs.modal', function (e) {
-						player.pause();
-					  
-					})
-				}
+			$overlay.one("click", initModal(i))
+
+			$overlay.on("click", function(e) {
+				$("#video-" + i).modal('show')
 			})
-		})
+			
+		}
+
+		$('.wp-audio-shortcode, .wp-video-shortcode').each(handleVideo)
 	});
 
 }(jQuery));
