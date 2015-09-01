@@ -1267,17 +1267,69 @@ function MapLoadScript() {
 var header = jQuery('#slider-section'),
       headerPos = header.offset();
         
-  $(window).scroll(function() {
-	  if( $(".side-nav").length != 0 ) {
-      if( $(this).scrollTop() > headerPos.top+header.height() ) {
-          $('#sticky').addClass('nav-fixed').fadeIn('medium');
-      } else {
-          $('#sticky').removeClass('nav-fixed').fadeIn('medium');
-	  }
-      }
+$(window).scroll(function() {
+  if( $(".side-nav").length != 0 ) {
+    if( $(this).scrollTop() > headerPos.top+header.height() ) {
+        $('#sticky').addClass('nav-fixed').fadeIn('medium');
+    } else {
+        $('#sticky').removeClass('nav-fixed').fadeIn('medium');
+    }
+  }
 });
+
+function goToTitle() {
+  if (!$(".main-content").length) return;
+  var wpadminbarHeight = $("#wpadminbar").length ? $("#wpadminbar").height() : 0;
+  var stickerHeight = $("#sticker").height();
+  var top = $(".main-content").offset().top - stickerHeight - wpadminbarHeight;
+  $("body").scrollTop( top )
+}
+
+function pagination() {
+  if (!$("#page-front #news .news-list").length) return;
+  var numPerPage = 5,
+      $lis = $(".news-list .list-group li"),
+      // start from 0
+      currPage = 0;
+      maxPage = Math.ceil($lis.length/numPerPage) - 1,
+      $prev = $("#news .news-up"),
+      $next = $("#news .news-down"),
+
+  toPage(currPage);
+  function toPage (num) {
+    var start = num * numPerPage
+    var end = (num + 1) * numPerPage
+    $lis.hide().slice(start, end).show()
+
+    // switch btn active state
+    if (num ==0) {
+      $prev.addClass("inactive")
+      $next.removeClass("inactive")
+    } else if(num == maxPage) {
+      $prev.removeClass("inactive")
+      $next.addClass("inactive")
+    } else {
+      $prev.removeClass("inactive")
+      $next.removeClass("inactive")
+    }
+  }
+
+  $prev.on("click", function () {
+    if (currPage<=0) return;
+    toPage(--currPage)
+    
+  })
+  $next.on("click", function () {
+    if (currPage>=maxPage) return;
+    toPage(++currPage)
+  })
+}
+
 
 $(window).load(function() {
 	appMaster.hiddenFooter();	
 	appMaster.masonryGrid();
+  goToTitle();
+  pagination();
+
 });

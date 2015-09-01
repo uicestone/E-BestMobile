@@ -419,7 +419,7 @@ header .navbar-nav li .dropdown-menu {
     color: #999; }
 
 #page-front #news .controls {
-  height: 500px; }
+  height: 25vw; }
   #page-front #news .controls .tp-leftarrow {
     background: #84bae5 !important;
     -webkit-transform: rotate(90deg);
@@ -431,7 +431,9 @@ header .navbar-nav li .dropdown-menu {
     -webkit-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
             transform: rotate(90deg); }
-
+#page-front #news .controls .tp-leftarrow.inactive, #page-front #news .controls .tp-rightarrow.inactive {
+  opacity: 0.5;
+}
 @media only screen and (max-width: 1200px) {
   .hide-1200 {
     display: none; }
@@ -961,3 +963,32 @@ img.aligncenter {
 	margin-bottom: 1.2em;
 }
 
+.wp-video {
+  position: relative;
+}
+.wp-video img.bg {
+  /*position: absolute;*/
+}
+.wp-video .mejs-overlay{
+  width: 100%;
+  height: 100%;
+}
+.modal-backdrop {
+z-index: 99980;
+}
+.modal {
+  z-index: 99999;
+}
+.modal .mejs-container {
+  max-width: 100%;
+}
+.modal-dialog {
+  margin: 20vh auto 0;
+}
+.modal-body {
+  padding: 0;
+}
+.modal-content {
+  box-shadow: none;
+  border: none;
+}

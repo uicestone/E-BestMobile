@@ -368,10 +368,6 @@
 						<div data-animation="fadeInDown" class="animated fadeInDown visible">
 							<ul class="list-group widget">
 								<?php foreach(get_posts(array('category_name'=>'news' . CAT_LANG_SUFFIX, 'posts_per_page'=>-1)) as $index => $post){ ?>
-								<?php if($index && $index % 5 === 0){ ?>
-							</ul>
-							<ul class="list-group widget hide">
-								<?php } ?>
 								<li class="item">
 									<div class="title clearfix">
 										<div class="pull-right"><?=get_the_date('Y-m-d', $post)?></div>
