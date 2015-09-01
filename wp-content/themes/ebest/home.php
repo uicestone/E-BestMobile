@@ -358,7 +358,7 @@
 						<div data-animation="fadeInDown" class="animated fadeInDown visible">
 							<ul class="list-group widget">
 								<?php foreach(get_posts(array('category_name'=>'news', 'posts_per_page'=>-1)) as $index => $post){ ?>
-								<?php if($index && $index % 5 === 0){ ?>
+								<?php if($index && $index % 100 === 0){ ?>
 							</ul>
 							<ul class="list-group widget hide">
 								<?php } ?>
