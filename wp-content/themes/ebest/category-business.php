@@ -2,6 +2,9 @@
 global $page_class; $page_class = 'page-business';
 get_header();
 add_action('parse_query', function($wp_query){
+	if(!$wp_query->is_main_query())
+		return;
+	
 	$wp_query->set('orderby', 'ID');
 	$wp_query->set('order', 'ASC');
 });
