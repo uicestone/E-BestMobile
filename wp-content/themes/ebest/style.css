@@ -12,3 +12,10 @@ Author: Rupert, Uice Lu
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+
+.ellipsis {
+	word-wrap: break-word;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}

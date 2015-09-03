@@ -369,12 +369,13 @@
 							<ul class="list-group widget">
 								<?php foreach(get_posts(array('category_name'=>'news' . CAT_LANG_SUFFIX, 'posts_per_page'=>-1)) as $index => $post){ ?>
 								<li class="item">
-									<div class="title clearfix">
-										<div class="pull-right"><?=get_the_date('Y-m-d', $post)?></div>
-										<div class="pull-left"><a href="<?=get_the_permalink($post->ID)?>"><?=get_the_title($post)?> <span class="arrow"></span></a></div>
+									<div class="title clearfix row">
+										<div class="col-sm-9 ellipsis"><a href="<?=get_the_permalink($post->ID)?>"><?=get_the_title($post)?></a></div>
+										<div class="col-sm-3"><?=get_the_date('Y-m-d', $post)?></div>
 									</div>
 									<div class="content">
-										<?=$post->post_excerpt;?>
+										<?=$post->post_excerpt?>
+										<span class="arrow"></span>
 									</div>
 								</li>
 								<?php } ?>

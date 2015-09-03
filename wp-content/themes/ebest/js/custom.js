@@ -1287,7 +1287,7 @@ function goToTitle() {
 
 function pagination() {
   if (!$("#page-front #news .news-list").length) return;
-  var numPerPage = 5,
+  var numPerPage = 4,
       $lis = $(".news-list .list-group li"),
       // start from 0
       currPage = 0;

@@ -405,8 +405,8 @@ header .navbar-nav li .dropdown-menu {
   #page-front #news .news-list ul.list-group li.item .title, #page-front #news .news-list ul.list-group li.item .title a {
     font-size: 15px;
     color: #84bae5;
-    margin: 0 0 10px; }
-    #page-front #news .news-list ul.list-group li.item .title .arrow {
+    margin: 0 0 6px; }
+    #page-front #news .news-list ul.list-group li.item .arrow {
       display: inline-block;
       background: url(../img/triple-arrow-grey.png) no-repeat 0 0/cover;
       width: 25px;
