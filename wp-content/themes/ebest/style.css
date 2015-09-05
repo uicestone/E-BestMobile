@@ -19,3 +19,7 @@ Author: Rupert, Uice Lu
     overflow: hidden;
     white-space: nowrap;
 }
+
+body {
+	font-family: 'Microsoft Yahei UI', 'Microsoft Yahei';
+}
