@@ -10,7 +10,7 @@ add_action('parse_query', function($wp_query){
 });
 ?>
 
-<section class="banner" style="background-image:url('<?=get_stylesheet_directory_uri() . '/img/' . $wp_query->query_vars['category_name']?>-banner.jpg')"></section>
+<section class="banner" style="background-image:url('<?=get_stylesheet_directory_uri() . '/img/' . get_category(pll_get_term($wp_query->query_vars['cat'], 'en'))->slug?>-banner.jpg')"></section>
 
 <section class="breadcrumb-box">
 	<div class="container">
@@ -45,7 +45,7 @@ add_action('parse_query', function($wp_query){
 				</div>
 			</div>
 			<?php while(have_posts()): the_post(); ?>
-			<div id="<?=get_post(get_the_ID())->post_name?>" class="content col-sm-12 col-md-9" style="display:none">
+			<div id="post-<?=get_the_ID()?>" class="content col-sm-12 col-md-9" style="display:none">
 				<?=parse_tabs(wpautop(get_the_content()), get_the_title())?>
 			</div>
 			<?php endwhile; ?>

@@ -45,9 +45,9 @@
 				<div class="col-md-9">
 					<div class="row special-feature">
 						<!-- Special Feature Box 1 -->
-						<?php $post = get_post(pll_get_post(get_posts('name=retail-execution')[0]->ID)); ?>
+						<?php $post = null; $post = get_post(pll_get_post(get_posts('name=retail-execution')[0]->ID)); ?>
 						<div class="col-md-3 col-sm-6 animated fadeInUp visible" data-animation="fadeInUp">
-							<a href="<?=site_url()?>/category/solutions/#retail-execution"><div class="s-feature-box text-center">
+							<a href="<?=site_url()?>/category/solutions<?=CAT_LANG_SUFFIX?>/#post-<?=$post->ID?>"><div class="s-feature-box text-center">
 								<div class="mask-top">
 									<!-- Icon -->
 									<i class="fa fa-home"></i> 
@@ -59,9 +59,9 @@
 							</div></a>
 						</div>
 						<!-- Special Feature Box 2 -->
-						<?php $post = get_post(pll_get_post(get_posts('name=direct-store-delivery')[0]->ID)); ?>
+						<?php $post = null; $post = get_post(pll_get_post(get_posts('name=direct-store-delivery')[0]->ID)); ?>
 						<div class="col-md-3 col-sm-6 animated fadeInRight visible" data-animation="fadeInRight">
-							<a href="<?=site_url()?>/category/solutions/#direct-store-delivery"><div class="s-feature-box text-center">
+							<a href="<?=site_url()?>/category/solutions<?=CAT_LANG_SUFFIX?>/#post-<?=$post->ID?>"><div class="s-feature-box text-center">
 								<div class="mask-top">
 									<!-- Icon -->
 									<i class="fa fa-magic"></i> 
@@ -73,9 +73,9 @@
 							</div></a>
 						</div>
 						<!-- Special Feature Box 3 -->
-						<?php $post = get_post(pll_get_post(get_posts('name=trade-promotion')[0]->ID)); ?>
+						<?php $post = null; $post = get_post(pll_get_post(get_posts('name=trade-promotion')[0]->ID)); ?>
 						<div class="col-md-3 col-sm-6 animated fadeInLeft visible" data-animation="fadeInLeft">
-							<a href="<?=site_url()?>/category/solutions/#trade-promotion"><div class="s-feature-box text-center">
+							<a href="<?=site_url()?>/category/solutions<?=CAT_LANG_SUFFIX?>/#post-<?=$post->ID?>"><div class="s-feature-box text-center">
 								<div class="mask-top">
 									<!-- Icon -->
 									<i class="fa fa-tags"></i> 
@@ -86,9 +86,9 @@
 							</div></a>
 						</div>
 						<!-- Special Feature Box 3 -->
-						<?php $post = get_post(pll_get_post(get_posts('name=order-management')[0]->ID)); ?>
+						<?php $post = null; $post = get_post(pll_get_post(get_posts('name=order-management')[0]->ID)); ?>
 						<div class="col-md-3 col-sm-6 animated fadeInDown visible" data-animation="fadeInDown">
-							<a href="<?=site_url()?>/category/solutions/#order-management"><div class="s-feature-box text-center">
+							<a href="<?=site_url()?>/category/solutions<?=CAT_LANG_SUFFIX?>/#post-<?=$post->ID?>"><div class="s-feature-box text-center">
 								<div class="mask-top">
 									<!-- Icon -->
 									<i class="fa fa-list-alt"></i> 
@@ -99,9 +99,9 @@
 							</div></a>
 						</div>
 						<!-- Special Feature Box 1 -->
-						<?php $post = get_post(pll_get_post(get_posts('name=supervisor')[0]->ID)); ?>
+						<?php $post = null; $post = get_post(pll_get_post(get_posts('name=supervisor')[0]->ID)); ?>
 						<div class="col-md-3 col-sm-6 animated fadeInUp visible" data-animation="fadeInUp">
-							<a href="<?=site_url()?>/category/solutions/#supervisor"><div class="s-feature-box text-center">
+							<a href="<?=site_url()?>/category/solutions<?=CAT_LANG_SUFFIX?>/#post-<?=$post->ID?>"><div class="s-feature-box text-center">
 								<div class="mask-top">
 									<!-- Icon -->
 									<i class="fa fa-user"></i> 
@@ -116,9 +116,9 @@
 							<?=do_shortcode(get_posts('tag=home-solutions-video')[0]->post_content)?>
 						</div>
 						<!-- Special Feature Box 3 -->
-						<?php $post = get_post(pll_get_post(get_posts('name=store-audit')[0]->ID)); ?>
+						<?php $post = null; $post = get_post(pll_get_post(get_posts('name=store-audit')[0]->ID)); ?>
 						<div class="col-md-3 col-sm-6 animated fadeInLeft visible" data-animation="fadeInLeft">
-							<a href="<?=site_url()?>/category/solutions/#store-audit"><div class="s-feature-box text-center">
+							<a href="<?=site_url()?>/category/solutions<?=CAT_LANG_SUFFIX?>/#post-<?=$post->ID?>"><div class="s-feature-box text-center">
 								<div class="mask-top">
 									<!-- Icon -->
 									<i class="fa fa-cloud-upload"></i> 
@@ -129,9 +129,9 @@
 							</div></a>
 						</div>
 						<!-- Special Feature Box 3 -->
-						<?php $post = get_post(pll_get_post(get_posts('name=online-to-offline')[0]->ID)); ?>
+						<?php $post = null; $post = get_post(pll_get_post(get_posts('name=online-to-offline')[0]->ID)); ?>
 						<div class="col-md-3 col-sm-6 animated fadeInDown visible" data-animation="fadeInDown">
-							<a href="<?=site_url()?>/category/solutions/#online-to-offline"><div class="s-feature-box text-center">
+							<a href="<?=site_url()?>/category/solutions<?=CAT_LANG_SUFFIX?>/#post-<?=$post->ID?>"><div class="s-feature-box text-center">
 								<div class="mask-top">
 									<!-- Icon -->
 									<i class="fa fa-shopping-cart"></i> 
@@ -141,9 +141,9 @@
 									<p><?=$post->post_excerpt?></p></div>
 							</div></a>
 						</div>
-						<?php $post = get_post(pll_get_post(get_posts('name=distributor-management')[0]->ID)); ?>
+						<?php $post = null; $post = get_post(pll_get_post(get_posts('name=distributor-management')[0]->ID)); ?>
 						<div class="col-md-3 col-sm-6 animated fadeInRight visible" data-animation="fadeInRight">
-							<a href="<?=site_url()?>/category/solutions/#distributor-management"><div class="s-feature-box text-center">
+							<a href="<?=site_url()?>/category/solutions<?=CAT_LANG_SUFFIX?>/#post-<?=$post->ID?>"><div class="s-feature-box text-center">
 								<div class="mask-top">
 									<!-- Icon -->
 									<i class="fa fa-users"></i> 
@@ -153,9 +153,9 @@
 									<p><?=$post->post_excerpt?></p></div>
 							</div></a>
 						</div>
-						<?php $post = get_post(pll_get_post(get_posts('name=asset-management')[0]->ID)); ?>
+						<?php $post = null; $post = get_post(pll_get_post(get_posts('name=asset-management')[0]->ID)); ?>
 						<div class="col-md-3 col-sm-6 animated fadeInLeft visible" data-animation="fadeInLeft">
-							<a href="<?=site_url()?>/category/solutions/#asset-management"><div class="s-feature-box text-center">
+							<a href="<?=site_url()?>/category/solutions<?=CAT_LANG_SUFFIX?>/#post-<?=$post->ID?>"><div class="s-feature-box text-center">
 								<div class="mask-top">
 									<!-- Icon -->
 									<i class="fa fa-columns"></i> 
@@ -165,9 +165,9 @@
 									<p><?=$post->post_excerpt?></p></div>
 							</div></a>
 						</div>
-						<?php $post = get_post(pll_get_post(get_posts('name=customer-self-order')[0]->ID)); ?>
+						<?php $post = null; $post = get_post(pll_get_post(get_posts('name=customer-self-order')[0]->ID)); ?>
 						<div class="col-md-3 col-sm-6 animated fadeInDown visible" data-animation="fadeInDown">
-							<a href="<?=site_url()?>/category/solutions/#customer-self-order"><div class="s-feature-box text-center">
+							<a href="<?=site_url()?>/category/solutions<?=CAT_LANG_SUFFIX?>/#post-<?=$post->ID?>"><div class="s-feature-box text-center">
 								<div class="mask-top">
 									<!-- Icon -->
 									<i class="fa fa-pencil-square-o"></i> 
