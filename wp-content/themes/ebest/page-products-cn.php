@@ -43,29 +43,15 @@
 <section class="providing">
 	<div class="container">
 		<div class="bar_title">
-			<h3>Providing Retail Execution For CPG</h3>
+			<h3><?=get_category_by_slug('industries' . CAT_LANG_SUFFIX)->description?></h3>
 		</div>
 		<nav class="bar-tab">
-			<a href="<?=site_url()?>/category/industries/#beverage" class="tab-item">
-				<span class="icon_img"><img src="<?=get_stylesheet_directory_uri()?>/img/bar01.png"></span>
-				<span class="tab-label">Beverage</span>
+			<?php foreach(get_posts('order=asc&category_name=industries' . CAT_LANG_SUFFIX) as $index => $post){ ?>
+			<a href="<?=site_url()?>/category/industries<?=CAT_LANG_SUFFIX?>/#post<?=$post->ID?>" class="tab-item">
+				<span class="icon_img"><img src="<?=get_stylesheet_directory_uri()?>/img/bar0<?=$index + 1?>.png"></span>
+				<span class="tab-label"><?=$post->post_title?></span>
 			</a>
-			<a href="<?=site_url()?>/category/industries/#wine-and-spirits" class="tab-item">
-				<span class="icon_img"><img src="<?=get_stylesheet_directory_uri()?>/img/bar02.png"></span>
-				<span class="tab-label">Wine and Spirits</span>
-			</a>
-			<a href="<?=site_url()?>/category/industries/#food" class="tab-item">
-				<span class="icon_img"><img src="<?=get_stylesheet_directory_uri()?>/img/bar03.png"></span>
-				<span class="tab-label">Food</span>
-			</a>
-			<a href="<?=site_url()?>/category/industries/#homecare" class="tab-item">
-				<span class="icon_img"><img src="<?=get_stylesheet_directory_uri()?>/img/bar04.png"></span>
-				<span class="tab-label">Homecare</span>
-			</a>
-			<a href="<?=site_url()?>/category/industries/#lubricants" class="tab-item">
-				<span class="icon_img"><img src="<?=get_stylesheet_directory_uri()?>/img/bar05.png"></span>
-				<span class="tab-label">Lubricants</span>
-			</a>
+			<?php } ?>
 		</nav>
 	</div>
 </section>
