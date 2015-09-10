@@ -37,7 +37,7 @@ add_action('parse_query', function($wp_query){
 						<div class="row">
 							<div class="col-md-12 col-xs-6">
 								<?php foreach(get_posts(array('cat'=>$wp_query->query_vars['cat'], 'order'=>'ASC', 'posts_per_page'=>-1)) as $index => $post){ ?>
-								<a href="#<?=$post->post_name?>" class="list-group-item"><?=$post->post_title?></a>
+								<a href="#post-<?=$post->ID?>" class="list-group-item"><?=$post->post_title?></a>
 								<?php } ?>
 							</div>
 						</div>
