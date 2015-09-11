@@ -73,7 +73,7 @@
 										<input type="text" name="s" class="" placeholder="">
 									</form>
 								</div>
-								<span class="white">Contact No. 4008 666 6666</span>
+								<span class="white">Contact No. 400 022 8266</span>
 							</div>
 						</div>
 					</div>

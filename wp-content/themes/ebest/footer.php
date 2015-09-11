@@ -64,9 +64,9 @@
 						<ul class="pull-right">
 							<li><a href="#"><img src="<?=get_stylesheet_directory_uri()?>/img/icon-facebook.png"></a></li>
 							<li><a href="#"><img src="<?=get_stylesheet_directory_uri()?>/img/icon-tweetter.png"></a></li>
-							<li><a href="#"><img src="<?=get_stylesheet_directory_uri()?>/img/icon-rss.png"></a></li>
+							<li><a href="http://www.linkedin.com/company/ebest"><img src="<?=get_stylesheet_directory_uri()?>/img/icon-linkin.png"></a></li>
+							<li><a href="#"><img src="<?=get_stylesheet_directory_uri()?>/img/icon-youtube.png"></a></li>
 							<li><a href="#"><img src="<?=get_stylesheet_directory_uri()?>/img/icon-google.png"></a></li>
-							<li><a href="#"><img src="<?=get_stylesheet_directory_uri()?>/img/icon-linkin.png"></a></li>
 						</ul>
 					</div>
 				</div>
@@ -75,7 +75,7 @@
 			<div class="copyright">
 				<div class="container">
 					<div class="row">
-						&copy; <?=date('Y')?> eBest mobile. All Rights Reserved.
+						&copy; <?=date('Y')?> eBest Mobile. All Rights Reserved.
 					</div>
 				</div>
 			</div>
