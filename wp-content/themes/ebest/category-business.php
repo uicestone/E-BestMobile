@@ -46,7 +46,7 @@ add_action('parse_query', function($wp_query){
 			</div>
 			<?php while(have_posts()): the_post(); ?>
 			<div id="post-<?=get_the_ID()?>" class="content col-sm-12 col-md-9" style="display:none">
-				<?=parse_tabs(wpautop(get_the_content()), get_the_title())?>
+				<?=parse_tabs(wpautop(get_the_content()), get_the_ID())?>
 			</div>
 			<?php endwhile; ?>
 		</div>

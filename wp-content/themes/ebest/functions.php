@@ -17,7 +17,7 @@ add_action('init', function(){
 	add_image_size('home-cloud-info', 1171, 601, true);
 });
 
-function parse_tabs($content, $post_title){
+function parse_tabs($content, $post_id){
 	preg_match_all('/<h1.*?>(.*?)<\/h1>/', $content, $matches);
 	$titles = $matches[1];
 	if(count($titles) < 3){
@@ -30,12 +30,12 @@ function parse_tabs($content, $post_title){
 <div class="tabs">
 	<ul class="nav nav-tabs mb-2" role="tablist">
 		<?php foreach($titles as $index => $title){ ?>
-		<li role="presentation" class="<?php if($index === 0){ ?> active<?php } ?>"><a href="#<?=sanitize_title($post_title)?>-<?=sanitize_title($title)?>" role="tab" data-toggle="tab"><?=$title?></a></li>
+		<li role="presentation" class="<?php if($index === 0){ ?> active<?php } ?>"><a href="#post-<?=$post_id?>-<?=sanitize_title($title)?>" role="tab" data-toggle="tab"><?=$title?></a></li>
 		<?php } ?>
 	</ul>
 	<div class="tab-content">
 		<?php foreach($contents as $index => $tab_content){ ?>
-		<div role="tabpanel" class="tab-pane fade<?php if($index === 0){ ?> active in<?php } ?>" id="<?=sanitize_title($post_title)?>-<?=sanitize_title($titles[$index])?>">
+		<div role="tabpanel" class="tab-pane fade<?php if($index === 0){ ?> active in<?php } ?>" id="post-<?=$post_id?>-<?=sanitize_title($titles[$index])?>">
 			<?=$tab_content?>
 		</div>
 		<?php } ?>
