@@ -15,6 +15,7 @@ add_action('init', function(){
 	register_taxonomy_for_object_type( 'post_tag', 'attachment' );
 	add_post_type_support( 'attachment', 'thumbnail' );
 	add_image_size('home-cloud-info', 1171, 601, true);
+	add_image_size('home-slider', 1920, 840, true);
 });
 
 function parse_tabs($content, $post_id){

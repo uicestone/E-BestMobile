@@ -5,16 +5,16 @@
 	<div class="slider">
 		<div class="tp-banner">
 			<ul>
-				<!-- Slide -->
+				<?php foreach(get_posts('tag=home-slider' . CAT_LANG_SUFFIX) as $post){ ?>
 				<li data-delay="7000" data-transition="fade" data-slotamount="7" data-masterspeed="2000">
 					<div class="elements text tp-caption">
-						<h2 class=""><?=pll__('RETAIL<br>EXECUTION')?></h2>
-						<p><?=pll__('In an age of see it, one of the biggest challenges facing CPG companies today is shelf display and retail execution.')?></p>
-						<a href="#" class="btn btn-lightBlue"><?=pll__('More')?> <span class="icon"></span></a>
+						<h2 class=""><?=$post->post_title?></h2>
+						<p><?=$post->post_excerpt?></p>
+						<a href="<?=get_the_permalink($post->ID)?>" class="btn btn-lightBlue"><?=pll__('More')?> <span class="icon"></span></a>
 					</div>
-					<img src="<?=get_stylesheet_directory_uri()?>/img/slider.jpg" alt="" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat" />
+					<?=get_the_post_thumbnail($post->ID, 'home-slider', array('data-bgfit'=>'cover', 'data-bgposition'=>'center top', 'data-bgrepeat'=>'no-repeat'))?>
 				</li>
-				<!-- Slide Ends -->
+				<?php } ?>
 			</ul>
 			<div class="tp-bannertimer"></div>
 		</div>
