@@ -31,12 +31,12 @@ function parse_tabs($content, $post_id){
 <div class="tabs">
 	<ul class="nav nav-tabs mb-2" role="tablist">
 		<?php foreach($titles as $index => $title){ ?>
-		<li role="presentation" class="<?php if($index === 0){ ?> active<?php } ?>"><a href="#post-<?=$post_id?>-<?=sanitize_title($title)?>" role="tab" data-toggle="tab"><?=$title?></a></li>
+		<li role="presentation" class="<?php if($index === 0){ ?> active<?php } ?>"><a href="#post-<?=$post_id?>-<?=crc32($title)?>" role="tab" data-toggle="tab"><?=$title?></a></li>
 		<?php } ?>
 	</ul>
 	<div class="tab-content">
 		<?php foreach($contents as $index => $tab_content){ ?>
-		<div role="tabpanel" class="tab-pane fade<?php if($index === 0){ ?> active in<?php } ?>" id="post-<?=$post_id?>-<?=sanitize_title($titles[$index])?>">
+		<div role="tabpanel" class="tab-pane fade<?php if($index === 0){ ?> active in<?php } ?>" id="post-<?=$post_id?>-<?=crc32($titles[$index])?>">
 			<?=$tab_content?>
 		</div>
 		<?php } ?>
