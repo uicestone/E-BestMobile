@@ -353,10 +353,10 @@
 <section id="news" class="page-section no-pad light-bg border-tb">
 	<div class="container-fluid who-we-are">
 		<div class="row">
-			<div class="col-md-6 no-pad animated fadeInLeft visible" data-animation="fadeInLeft">
+			<div class="col-md-5 no-pad animated fadeInLeft visible" data-animation="fadeInLeft">
 				<?=do_shortcode(get_posts('tag=home-news-video')[0]->post_content)?>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-7">
 				<div class="row">
 					<div class="col-xs-9 news-list">
 
