@@ -2,15 +2,18 @@
 (function($){
     "use strict";
     $(document).ready(function(){
+
+    var frontImageH = $('body').width() > 1440 ? 650 : 500
+
 		$('.tp-banner').revolution({
 			delay:1000,
 			startwidth:1170,
-			startheight:650,
+			startheight: frontImageH,
 			hideThumbs:10,
 			fullWidth:"on",
 			forceFullWidth:"on",
 			hideTimerBar: 'on',
-      navigationType:"bullet",
+      navigationType: "none",
       navigationArrows:"solo",
       navigationStyle:"round",
       navigationHAlign:"center",

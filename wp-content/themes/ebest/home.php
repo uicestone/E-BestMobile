@@ -7,11 +7,6 @@
 			<ul>
 				<?php foreach(get_posts('tag=home-slider' . CAT_LANG_SUFFIX) as $post){ ?>
 				<li data-delay="7000" data-transition="fade" data-slotamount="7" data-masterspeed="2000">
-					<div class="elements text tp-caption">
-						<h2 class=""><?=$post->post_title?></h2>
-						<p><?=$post->post_excerpt?></p>
-						<a href="<?=get_the_permalink($post->ID)?>" class="btn btn-lightBlue"><?=pll__('More')?> <span class="icon"></span></a>
-					</div>
 					<?=get_the_post_thumbnail($post->ID, 'home-slider', array('data-bgfit'=>'cover', 'data-bgposition'=>'center top', 'data-bgrepeat'=>'no-repeat'))?>
 				</li>
 				<?php } ?>
