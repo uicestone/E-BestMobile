@@ -47,7 +47,7 @@
 		</div>
 		<nav class="bar-tab">
 			<?php foreach(get_posts('order=asc&category_name=industries' . CAT_LANG_SUFFIX) as $index => $post){ ?>
-			<a href="<?=site_url()?>/category/industries<?=CAT_LANG_SUFFIX?>/#post<?=$post->ID?>" class="tab-item">
+			<a href="<?=site_url()?>/category/industries<?=CAT_LANG_SUFFIX?>/#post-<?=$post->ID?>" class="tab-item">
 				<span class="icon_img"><img src="<?=get_stylesheet_directory_uri()?>/img/bar0<?=$index + 1?>.png"></span>
 				<span class="tab-label"><?=$post->post_title?></span>
 			</a>
