@@ -35,7 +35,7 @@
 		<div class="inner">
 			<div class="row">
 				<div class="col-md-3">
-					<img src="<?=get_stylesheet_directory_uri()?>/img/text-1.png">
+					<img src="<?=get_stylesheet_directory_uri()?>/img/text-<?=pll_current_language()?>.png">
 				</div>
 				<div class="col-md-9">
 					<div class="row special-feature">
