@@ -30,7 +30,7 @@
 <section class="cloud">
 	<div>
 		<img src="<?=get_stylesheet_directory_uri()?>/img/cloud.png">
-		<a href="javascript:;">Learn More</a>
+		<a href="http://ebest.uice.lu/category/cloud/#post-255">Learn More</a>
 	</div>
 </section>
 
