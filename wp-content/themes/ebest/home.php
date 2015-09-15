@@ -17,7 +17,7 @@
 
 	<div class="free-trial">
 		<div class="content">
-			<a href="http://www.ebestsfa.com/" target="_blank"><p><?=pll__('FREE TRIAL ON THE CLOUD')?></p>
+			<a href="https://appexchange.salesforce.com/listingDetail?listingId=a0N3000000B5XOZEA3" target="_blank"><p><?=pll__('FREE TRIAL ON THE CLOUD')?></p>
 			<div class="tow-floors">
 				<ul>
 					<li><?=pll__('eBest SFA')?></li>
