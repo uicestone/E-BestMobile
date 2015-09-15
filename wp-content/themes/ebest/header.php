@@ -127,7 +127,7 @@
 												<!-- Portfolio Dropdown Menu -->
 												<ul class="dropdown-menu">
 													<?php foreach(get_posts(array('category_name'=>'cloud' . CAT_LANG_SUFFIX, 'order'=>'ASC', 'posts_per_page'=>-1)) as $post){ ?>
-													<?php if($post->post_name === 'overview') continue;?>
+													<?php if(in_array($post->post_name, array('overview', 'overview-cn'))) continue;?>
 													<li>
 														<a href="<?=site_url()?>/category/cloud<?=CAT_LANG_SUFFIX?>/#post-<?=$post->ID?>"><?=$post->post_title?></a>
 													</li>
