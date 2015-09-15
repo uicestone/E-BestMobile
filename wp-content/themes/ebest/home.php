@@ -45,7 +45,7 @@
 							<a href="<?=site_url()?>/category/solutions<?=CAT_LANG_SUFFIX?>/#post-<?=$post->ID?>"><div class="s-feature-box text-center">
 								<div class="mask-top">
 									<!-- Icon -->
-									<i class="fa fa-home"></i> 
+									<i class="fa fa-home"></i>
 									<!-- Title -->
 									<h4><?=$post->post_title?></h4></div>
 								<div class="mask-bottom">
@@ -59,7 +59,7 @@
 							<a href="<?=site_url()?>/category/solutions<?=CAT_LANG_SUFFIX?>/#post-<?=$post->ID?>"><div class="s-feature-box text-center">
 								<div class="mask-top">
 									<!-- Icon -->
-									<i class="fa fa-magic"></i> 
+									<i class="fa fa-magic"></i>
 									<!-- Title -->
 									<h4><?=$post->post_title?></h4></div>
 								<div class="mask-bottom">
@@ -73,7 +73,7 @@
 							<a href="<?=site_url()?>/category/solutions<?=CAT_LANG_SUFFIX?>/#post-<?=$post->ID?>"><div class="s-feature-box text-center">
 								<div class="mask-top">
 									<!-- Icon -->
-									<i class="fa fa-tags"></i> 
+									<i class="fa fa-tags"></i>
 									<!-- Title -->
 									<h4><?=$post->post_title?></h4></div>
 								<div class="mask-bottom">
@@ -86,7 +86,7 @@
 							<a href="<?=site_url()?>/category/solutions<?=CAT_LANG_SUFFIX?>/#post-<?=$post->ID?>"><div class="s-feature-box text-center">
 								<div class="mask-top">
 									<!-- Icon -->
-									<i class="fa fa-list-alt"></i> 
+									<i class="fa fa-list-alt"></i>
 									<!-- Title -->
 									<h4><?=$post->post_title?></h4></div>
 								<div class="mask-bottom">
@@ -99,7 +99,7 @@
 							<a href="<?=site_url()?>/category/solutions<?=CAT_LANG_SUFFIX?>/#post-<?=$post->ID?>"><div class="s-feature-box text-center">
 								<div class="mask-top">
 									<!-- Icon -->
-									<i class="fa fa-user"></i> 
+									<i class="fa fa-user"></i>
 									<!-- Title -->
 									<h4><?=$post->post_title?></h4></div>
 								<div class="mask-bottom">
@@ -116,7 +116,7 @@
 							<a href="<?=site_url()?>/category/solutions<?=CAT_LANG_SUFFIX?>/#post-<?=$post->ID?>"><div class="s-feature-box text-center">
 								<div class="mask-top">
 									<!-- Icon -->
-									<i class="fa fa-cloud-upload"></i> 
+									<i class="fa fa-cloud-upload"></i>
 									<!-- Title -->
 									<h4><?=$post->post_title?></h4></div>
 								<div class="mask-bottom">
@@ -129,7 +129,7 @@
 							<a href="<?=site_url()?>/category/solutions<?=CAT_LANG_SUFFIX?>/#post-<?=$post->ID?>"><div class="s-feature-box text-center">
 								<div class="mask-top">
 									<!-- Icon -->
-									<i class="fa fa-shopping-cart"></i> 
+									<i class="fa fa-shopping-cart"></i>
 									<!-- Title -->
 									<h4><?=$post->post_title?></h4></div>
 								<div class="mask-bottom">
@@ -141,7 +141,7 @@
 							<a href="<?=site_url()?>/category/solutions<?=CAT_LANG_SUFFIX?>/#post-<?=$post->ID?>"><div class="s-feature-box text-center">
 								<div class="mask-top">
 									<!-- Icon -->
-									<i class="fa fa-users"></i> 
+									<i class="fa fa-users"></i>
 									<!-- Title -->
 									<h4><?=$post->post_title?></h4></div>
 								<div class="mask-bottom">
@@ -153,7 +153,7 @@
 							<a href="<?=site_url()?>/category/solutions<?=CAT_LANG_SUFFIX?>/#post-<?=$post->ID?>"><div class="s-feature-box text-center">
 								<div class="mask-top">
 									<!-- Icon -->
-									<i class="fa fa-columns"></i> 
+									<i class="fa fa-columns"></i>
 									<!-- Title -->
 									<h4><?=$post->post_title?></h4></div>
 								<div class="mask-bottom">
@@ -165,7 +165,7 @@
 							<a href="<?=site_url()?>/category/solutions<?=CAT_LANG_SUFFIX?>/#post-<?=$post->ID?>"><div class="s-feature-box text-center">
 								<div class="mask-top">
 									<!-- Icon -->
-									<i class="fa fa-pencil-square-o"></i> 
+									<i class="fa fa-pencil-square-o"></i>
 									<!-- Title -->
 									<h4><?=$post->post_title?></h4></div>
 								<div class="mask-bottom">
@@ -202,7 +202,7 @@
 					<div class="s-feature-box text-center">
 						<div class="mask-top">
 							<!-- Icon -->
-							<i class="fa fa-home"></i> 
+							<i class="fa fa-home"></i>
 							<!-- Title -->
 							<h4>Retail<br> Execution</h4></div>
 						<div class="mask-bottom">
@@ -215,7 +215,7 @@
 					<div class="s-feature-box text-center">
 						<div class="mask-top">
 							<!-- Icon -->
-							<i class="fa fa-magic"></i> 
+							<i class="fa fa-magic"></i>
 							<!-- Title -->
 							<h4>Magical <br>Animations</h4></div>
 						<div class="mask-bottom">
@@ -228,7 +228,7 @@
 					<div class="s-feature-box text-center">
 						<div class="mask-top">
 							<!-- Icon -->
-							<i class="fa fa-tags"></i> 
+							<i class="fa fa-tags"></i>
 							<!-- Title -->
 							<h4>Trade<br>Promotion</h4></div>
 						<div class="mask-bottom">
@@ -240,7 +240,7 @@
 					<div class="s-feature-box text-center">
 						<div class="mask-top">
 							<!-- Icon -->
-							<i class="fa fa-list-alt"></i> 
+							<i class="fa fa-list-alt"></i>
 							<!-- Title -->
 							<h4>Order<br>Management</h4></div>
 						<div class="mask-bottom">
@@ -252,7 +252,7 @@
 					<div class="s-feature-box text-center">
 						<div class="mask-top">
 							<!-- Icon -->
-							<i class="fa fa-user"></i> 
+							<i class="fa fa-user"></i>
 							<!-- Title -->
 							<h4>Supervisor</h4></div>
 						<div class="mask-bottom">
@@ -264,7 +264,7 @@
 					<div class="s-feature-box text-center">
 						<div class="mask-top">
 							<!-- Icon -->
-							<i class="fa fa-cloud-upload"></i> 
+							<i class="fa fa-cloud-upload"></i>
 							<!-- Title -->
 							<h4>Store<br>Audit</h4></div>
 						<div class="mask-bottom">
@@ -276,7 +276,7 @@
 					<div class="s-feature-box text-center">
 						<div class="mask-top">
 							<!-- Icon -->
-							<i class="fa fa-shopping-cart"></i> 
+							<i class="fa fa-shopping-cart"></i>
 							<!-- Title -->
 							<h4>Online to<br>Offline</h4></div>
 						<div class="mask-bottom">
@@ -287,7 +287,7 @@
 					<div class="s-feature-box text-center">
 						<div class="mask-top">
 							<!-- Icon -->
-							<i class="fa fa-users"></i> 
+							<i class="fa fa-users"></i>
 							<!-- Title -->
 							<h4>Distributor<br>Management</h4></div>
 						<div class="mask-bottom">
@@ -298,7 +298,7 @@
 					<div class="s-feature-box text-center">
 						<div class="mask-top">
 							<!-- Icon -->
-							<i class="fa fa-columns"></i> 
+							<i class="fa fa-columns"></i>
 							<!-- Title -->
 							<h4>Asset<br>Management</h4></div>
 						<div class="mask-bottom">
@@ -309,7 +309,7 @@
 					<div class="s-feature-box text-center">
 						<div class="mask-top">
 							<!-- Icon -->
-							<i class="fa fa-pencil-square-o"></i> 
+							<i class="fa fa-pencil-square-o"></i>
 							<!-- Title -->
 							<h4>Customer<br>Self Order</h4></div>
 						<div class="mask-bottom">
@@ -368,9 +368,15 @@
 										<div class="col-sm-9 ellipsis"><a href="<?=get_the_permalink($post->ID)?>"><?=get_the_title($post)?></a></div>
 										<div class="col-sm-3"><?=get_the_date('Y-m-d', $post)?></div>
 									</div>
-									<div class="content">
-										<?=$post->post_excerpt?>
-										<span class="arrow"></span>
+									<div class="content row">
+										<div class="col-sm-9">
+											<div class="col-sm-10 ellipsis">
+												<?=$post->post_excerpt?>
+	      							</div>
+											<div class="col-sm-2">
+								        <span class="arrow"></span>
+								      </div>
+										</div>
 									</div>
 								</li>
 								<?php } ?>
@@ -390,7 +396,7 @@
 <script type="text">
 jQuery(function($){
 	$('.news-down').on('click', function(){
-		
+
 	});
 });
 </script>

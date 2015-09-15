@@ -265,9 +265,9 @@ header .navbar-nav li .dropdown-menu {
 
 @media only screen and (min-width: 1200px) {
   .tabs .nav-tabs li a {
-    margin: 9px 0; 
+    margin: 9px 0;
 
-  } 
+  }
 }
 
 @media only screen and (max-width: 760px) {
@@ -412,8 +412,7 @@ header .navbar-nav li .dropdown-menu {
       width: 25px;
       height: 21px;
       position: relative;
-      top: 4px;
-      margin-left: 30px; }
+      top: 4px; }
   #page-front #news .news-list ul.list-group li.item .content {
     font-size: 16px;
     color: #999; }
