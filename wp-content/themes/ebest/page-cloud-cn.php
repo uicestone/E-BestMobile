@@ -30,7 +30,7 @@
 <section class="cloud">
 	<div>
 		<img src="<?=get_stylesheet_directory_uri()?>/img/cloud.png">
-		<a href="javascript:;">了解详情</a>
+		<a href="http://ebest.uice.lu/cn/category/cloud-cn/#post-330">了解详情</a>
 	</div>
 </section>
 
