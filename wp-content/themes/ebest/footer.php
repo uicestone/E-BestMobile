@@ -30,7 +30,7 @@
 							<dl>
 								<dt><a href="<?=site_url()?>/category/customer<?=CAT_LANG_SUFFIX?>/"><?=get_category_by_slug('customer' . CAT_LANG_SUFFIX)->name?></a></dt>
 								<?php foreach(get_posts(array('category_name'=>'customer' . CAT_LANG_SUFFIX, 'order'=>'asc', 'posts_per_page'=>-1)) as $post){ ?>
-								<dd><?=get_the_title($post->id)?></a></dd>
+								<dd><a href="<?=site_url()?>/category/customer<?=CAT_LANG_SUFFIX?>/#post-<?=$post->ID?>"><?=get_the_title($post->id)?></a></dd>
 								<?php } ?>
 							</dl>
 						</div>
