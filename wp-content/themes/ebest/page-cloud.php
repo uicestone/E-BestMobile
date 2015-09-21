@@ -41,7 +41,7 @@
 				<img src="<?=get_stylesheet_directory_uri()?>/img/produce-video.png">
 			</div>
 			<div class="col-md-6 no-pad animated fadeInLeft visible" data-animation="fadeInLeft">
-				<img src="<?=get_stylesheet_directory_uri()?>/img/produce.png">
+				<a href="<?=site_url()?>/category/customer/#post-57" target="_blank"><img src="<?=get_stylesheet_directory_uri()?>/img/produce.png"><a/>
 			</div>
 		</div>
 	</div>
