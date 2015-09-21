@@ -136,7 +136,7 @@ select {
 
 p {
   color: #999;
-  font-size: 16px;
+  font-size: 14px;
   margin: 0.5em 0 2em; }
 
 ::-moz-selection {
@@ -752,7 +752,8 @@ header .navbar-nav li .dropdown-menu {
 
 .archive .content_title, .single-post .content_title, .archive .content_title a, .single-post .content_title a {
   color: #84bae5;
-  margin: 0 0 10px; }
+  margin: 0 0 10px; 
+  font-size: 20px;}
   .archive .content_title small, .single-post .content_title small {
     float: right;
     color: #84bae5;
