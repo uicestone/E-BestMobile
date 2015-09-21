@@ -17,14 +17,14 @@
 
 	<div class="free-trial">
 		<div class="content">
-			<a href="https://appexchange.salesforce.com/listingDetail?listingId=a0N3000000B5XOZEA3" target="_blank"><p><?=pll__('FREE TRIAL ON THE CLOUD')?></p>
+			<p><?=pll__('FREE TRIAL ON THE CLOUD')?></p>
 			<div class="tow-floors">
 				<ul>
-					<li><?=pll__('eBest SFA')?></li>
-					<li><?=pll__('eBestSFA on Salesforce')?></li>
+					<a href="https://www.ebestsfa.com" target="_blank"><li><?=pll__('eBest SFA')?></li></a>
+					<a href="https://appexchange.salesforce.com/listingDetail?listingId=a0N3000000B5XOZEA3" target="_blank"><li><?=pll__('eBestSFA on Salesforce')?></li></a>
 				</ul>
 			</div>
-			</a>
+			
 		</div>
 	</div>
 </section>

@@ -45,11 +45,11 @@
 				</div>
 				<div class="trial col-md-12 col-xs-6">
 					<div class="trial_list">
-						<a href="http://www.ebestsfa.com/" target="_blank"><p>FREE TRIAL ON THE CLOUD</p>
+						<p>FREE TRIAL ON THE CLOUD</p>
 						<div class="bg_lightblue">
-							<p class="bt_white">eBest SFA</p>
-							<P>eBestSFA on Salesforce</P>
-						</div></a>
+							<a href="http://www.ebestsfa.com/" target="_blank"><p class="bt_white">eBest SFA</p></a>
+							<a href="https://appexchange.salesforce.com/listingDetail?listingId=a0N3000000B5XOZEA3" target="_blank"><P>eBestSFA on Salesforce</P></a>
+						</div>
 					</div>
 				</div>
 				<div class="clearfix"></div>
