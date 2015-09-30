@@ -335,7 +335,7 @@
 					<div class="tab-content">
 						<?php foreach(get_posts(array('category_name'=>'cloud' . CAT_LANG_SUFFIX, 'order'=>'ASC', 'posts_per_page'=>5, 'offset'=>1)) as $index => $post){?>
 						<div id="post-<?=$post->ID?>" class="tab-pane fade<?php if($index === 0){ ?> active<?php } ?> in">
-							<a href="<?=get_the_permalink($post->ID)?>"><?=get_the_post_thumbnail($post->ID, 'home-cloud-info')?></a>
+							<a href="<?=site_url()?>/cloud<?=CAT_LANG_SUFFIX?>/#post-<?=$post->ID?>"><?=get_the_post_thumbnail($post->ID, 'home-cloud-info')?></a>
 						</div>
 						<?php } ?>
 					</div>
