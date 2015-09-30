@@ -34,7 +34,7 @@
 									<div class="tab-pane fade active in">
 										<h5 class="content_title"><?=get_the_date('Y-m-d', $post)?></h5>
 										<p>
-											<small><?=get_the_title($post)?></small>
+											<small><a href="<?=get_permalink($post->ID)?>"><?=get_the_title($post)?></a></small>
 										</p>
 									</div>
 									<?php } ?>

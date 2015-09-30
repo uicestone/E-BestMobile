@@ -17,7 +17,7 @@
 				</div>
 				<div class="row btns tabs">
 					<ul>
-						<?php foreach(get_posts(array('category_name'=>'cloud' . CAT_LANG_SUFFIX, 'order'=>'ASC')) as $index => $post){ if($post->post_name === 'overview-cn') continue; ?>
+						<?php foreach(get_posts(array('category_name'=>'cloud' . CAT_LANG_SUFFIX, 'order'=>'ASC', 'posts_per_page'=>6)) as $index => $post){ if($post->post_name === 'overview-cn') continue; ?>
 						<li<?php if($index === 0){ ?> class="active"<?php } ?>><a href="<?=site_url()?>/category/cloud/#post-<?=$post->ID?>"><?=$post->post_title?></a></li>
 						<?php } ?>
 					</ul>
