@@ -63,10 +63,20 @@ jQuery(function($){
 		$('.content:last').show();
 		$('.list-group-item:first').addClass('active');
 	}
-	$('.list-group-item').on('click', function(event){
+	$('.list-group-item, .dropdown-menu>li>a').on('click', function(event){
 		event.preventDefault();
 		var target = $(this).attr('href');
-		window.location.hash = target;
+		
+		if(target.match(/http:\/\//))
+		{
+			window.location.href = target;
+			target = target.match(/#.*$/)[0];
+		}
+		else
+		{
+			window.location.hash = target;
+		}
+		
 		$('.content').hide();
 		$('.content' + target).show();
 		$('.list-group-item').removeClass('active');
