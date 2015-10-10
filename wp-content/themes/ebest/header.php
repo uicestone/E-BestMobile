@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>eBest</title>
+		<title><?php wp_title('&raquo;', true, 'right'); ?> <?php bloginfo('sitename'); ?></title>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="keywords" content="HTML5 Template" />
 		<meta name="description" content="Mist — Multi-Purpose HTML Template" />

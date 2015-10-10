@@ -55,14 +55,20 @@ add_action('parse_query', function($wp_query){
 
 <script type="text/javascript">
 jQuery(function($){
+	
 	if(window.location.hash){
 		$('.content' + window.location.hash).show();
 		$('.list-group-item[href="' + window.location.hash + '"]').addClass('active');
+		var postTitle = $('.list-group-item[href="' + window.location.hash + '"]').text();
 	}
 	else{
 		$('.content:last').show();
 		$('.list-group-item:first').addClass('active');
+		var postTitle = $('.list-group-item:first').text();
 	}
+	
+	$('title').prepend(postTitle + ' &raquo; ');
+	
 	$('.list-group-item, .dropdown-menu>li>a').on('click', function(event){
 		event.preventDefault();
 		var target = $(this).attr('href');
@@ -81,6 +87,9 @@ jQuery(function($){
 		$('.content' + target).show();
 		$('.list-group-item').removeClass('active');
 		$('.list-group-item[href="' + target + '"]').addClass('active');
+		
+		var postTitle = $(this).text();
+		$('title').text(postTitle + $('title').text().match(/\s*».*$/));
 	});
 	
 });
