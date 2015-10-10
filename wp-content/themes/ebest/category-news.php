@@ -30,7 +30,7 @@
 						<div class="row">
 							<div class="col-md-12 col-xs-6">
 								<div class="tab-content">
-									<?php foreach(get_posts() as $post){ ?>
+									<?php foreach(get_posts('category_name=news') as $post){ ?>
 									<div class="tab-pane fade active in">
 										<h5 class="content_title"><?=get_the_date('Y-m-d', $post)?></h5>
 										<p>
