@@ -84,9 +84,7 @@
 					<?php endwhile; ?>
 					<div class="clearfix"></div>
 					<div class="page_list">
-						<div class="bg_blue"><span>&lt;</span></div>
-						<div class="bg_gray">1</div>
-						<div class="bg_blue"><span>&gt;</span></div>
+						<?=paginate_links(array('prev_text'=>'<', 'next_text'=>'>'))?>
 					</div>
 				</div>
 
