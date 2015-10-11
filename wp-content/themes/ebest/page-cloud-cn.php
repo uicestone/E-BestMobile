@@ -38,7 +38,7 @@
 	<div class="container-fluid who-we-are">
 		<div class="row">
 			<div class="col-md-6 no-pad animated fadeInLeft visible" data-animation="fadeInLeft">
-				<img src="<?=get_stylesheet_directory_uri()?>/img/produce-video.png">
+				<?=do_shortcode(get_posts('tag=cloud-video')[0]->post_content)?>
 			</div>
 			<div class="col-md-6 no-pad animated fadeInLeft visible" data-animation="fadeInLeft">
 				<a href="<?=site_url()?>/cn/category/customer-cn/#post-443" target="_blank"><img src="<?=get_stylesheet_directory_uri()?>/img/produce.png"></a>
