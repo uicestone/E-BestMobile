@@ -1,18 +1,18 @@
-<?php get_header(); ?>
+<?php get_header(); the_post(); ?>
 
 <section class="title_h2">
 	<div class="container">
-		<h2><?php the_title(); ?></h2>
+		<h2><?php the_category(); ?></h2>
 	</div>
 </section>
 <section class="breadcrumb-box">
 	<div class="container">
 		<ul class="breadcrumb">
 			<li>
-				<a href="<?=site_url()?>">Home </a> <span>》</span>
+				<a href="<?=site_url()?>"><?=pll__('Home')?></a> <span>》</span>
 			</li>
 			<li>
-				News
+				<?php the_category(); ?>
 			</li>
 		</ul>
 	</div>
@@ -68,7 +68,6 @@
 
 			<div class="content col-sm-12 col-md-9">
 				<div class="tabs">
-					<?php while(have_posts()): the_post(); ?>
 					<div class="tab-content" unbor_bottom>
 						<div class="tab-pane fade active in">
 							<h4 class="content_title">
@@ -78,7 +77,6 @@
 							<p><?php the_content(); ?></p>
 						</div>
 					</div>
-					<?php endwhile; ?>
 				</div>
 
 			</div>
