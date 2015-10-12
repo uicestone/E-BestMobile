@@ -20,7 +20,7 @@
 			<p><?=pll__('FREE TRIAL ON THE CLOUD')?></p>
 			<div class="tow-floors">
 				<ul>
-					<a href="https://www.ebestsfa.com" target="_blank" style="color:white;"><li><?=pll__('eBest SFA')?></li></a>
+					<a href="http://www.ebestsfa.com" target="_blank" style="color:white;"><li><?=pll__('eBest SFA')?></li></a>
 					<a href="https://appexchange.salesforce.com/listingDetail?listingId=a0N3000000B5XOZEA3" target="_blank" style="color:white;"><li><?=pll__('eBestSFA on Salesforce')?></li></a>
 				</ul>
 			</div>
