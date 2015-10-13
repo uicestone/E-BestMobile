@@ -41,11 +41,11 @@
 						<div class="row">
 							<div class="col-md-12 col-xs-6">
 								<div class="tab-content">
-									<?php foreach(get_posts('category_name=news') as $post){ ?>
+									<?php foreach(get_posts('category_name=news') as $news){ ?>
 									<div class="tab-pane fade active in">
-										<h5 class="content_title"><?=get_the_date('Y-m-d', $post)?></h5>
+										<h5 class="content_title"><?=get_the_date('Y-m-d', $news->id)?></h5>
 										<p>
-											<small><?=get_the_title($post)?></small>
+											<small><?=get_the_title($news->ID)?></small>
 										</p>
 									</div>
 									<?php } ?>
@@ -74,7 +74,7 @@
 								<small class=""><?php the_date('Y-m-d'); ?></small>
 								<?php the_title(); ?>
 							</h4>
-							<p><?php the_content(); ?></p>
+							<?php the_content(); ?>
 						</div>
 					</div>
 				</div>
