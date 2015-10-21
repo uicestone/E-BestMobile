@@ -1,3 +1,8 @@
+<?php
+if(is_home() && strpos($_SERVER['REQUEST_URI'], '/cn/') !== 0 && preg_match('/cn|zh/', $_SERVER['HTTP_ACCEPT_LANGUAGE'])){
+	header('Location: ' . site_url() . '/cn/');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
