@@ -1,5 +1,6 @@
 <?php
-if(is_home() && strpos($_SERVER['REQUEST_URI'], '/cn/') !== 0 && preg_match('/cn|zh/', $_SERVER['HTTP_ACCEPT_LANGUAGE'])){
+if(is_home() && strpos($_SERVER['REQUEST_URI'], '/cn/') !== 0 && preg_match('/cn|zh/', $_SERVER['HTTP_ACCEPT_LANGUAGE']) && empty($_COOKIE['language_auto_set'])){
+	setcookie('language_auto_set', '1');
 	header('Location: ' . site_url() . '/cn/');
 }
 ?>
