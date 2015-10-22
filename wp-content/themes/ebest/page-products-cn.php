@@ -18,7 +18,7 @@
 				<div class="row btns tabs">
 					<ul>
 						<?php foreach(get_posts(array('category_name'=>'products' . CAT_LANG_SUFFIX, 'order'=>'ASC')) as $index => $post){ ?>
-						<li<?php if($index === 0){ ?> class="active"<?php } ?>><a href="<?=site_url()?>/category/products/#post-<?=$post->ID?>"><?=$post->post_title?></a></li>
+						<li<?php if($index === 0){ ?> class="active"<?php } ?>><a href="<?=site_url()?>/cn/category/products-cn/#post-<?=$post->ID?>"><?=$post->post_title?></a></li>
 						<?php } ?>
 					</ul>
 				</div>
