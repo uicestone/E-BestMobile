@@ -112,7 +112,7 @@ if(is_home() && strpos($_SERVER['REQUEST_URI'], '/cn/') !== 0 && preg_match('/cn
 										<ul class="nav navbar-nav" data-sm-skip-collapsible-behavior="true">
 											<!-- Home  Mega Menu -->
 											<li class="">
-												<a href="<?=site_url()?>/<?=LANG === pll_default_language('slug') ? '' : LANG?>"><?=pll_e('Home')?></a>
+												<a href="<?=site_url()?>/<?=LANG === pll_default_language('slug') ? '' : LANG?>"><?=pll__('Home')?></a>
 											</li>
 											<!-- Mega Menu Ends -->
 											<!-- Pages Mega Menu -->

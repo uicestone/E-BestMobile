@@ -57,4 +57,5 @@ add_action('init', function(){
 	pll_register_string('eBest SFA', 'eBest SFA');
 	pll_register_string('eBestSFA on Salesforce', 'eBestSFA on Salesforce');
 	pll_register_string('free-trial', 'FREE TRIAL ON THE CLOUD');
+	pll_register_string('footer-link', 'Link to the other sites');
 });

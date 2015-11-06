@@ -60,7 +60,7 @@
 						</div>
 					</div>
 					<div class="links">
-						<span>Link to the other sites</span>
+						<?=pll__('Link to the other sites')?>
 						<ul class="pull-right">
 							<li><a href="#"><img src="<?=get_stylesheet_directory_uri()?>/img/icon-facebook.png"></a></li>
 							<li><a href="#"><img src="<?=get_stylesheet_directory_uri()?>/img/icon-tweetter.png"></a></li>
