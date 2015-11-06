@@ -79,7 +79,7 @@ if(is_home() && strpos($_SERVER['REQUEST_URI'], '/cn/') !== 0 && preg_match('/cn
 										<input type="text" name="s" class="" placeholder="">
 									</form>
 								</div>
-								<span class="white">400 022 8266</span>
+								<span class="white">+86 400 022 8266</span>
 							</div>
 						</div>
 					</div>
