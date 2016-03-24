@@ -1,9 +1,3 @@
-<?php
-if(is_home() && strpos($_SERVER['REQUEST_URI'], '/cn/') !== 0 && preg_match('/cn|zh/', $_SERVER['HTTP_ACCEPT_LANGUAGE']) && empty($_COOKIE['language_auto_set'])){
-	setcookie('language_auto_set', '1');
-	header('Location: ' . site_url() . '/cn/');
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -62,11 +56,11 @@ if(is_home() && strpos($_SERVER['REQUEST_URI'], '/cn/') !== 0 && preg_match('/cn
 							<ul class="nav navbar-nav">
 								<!-- Top Language -->
 								<li class="top-parent">
-									<a href="<?=site_url()?>/cn/"<?php if(LANG === 'cn'){ ?> class="lightBlue"<?php } ?>>简体中文</a>
+									<a href="<?=site_url()?>"<?php if(LANG === 'cn'){ ?> class="lightBlue"<?php } ?>>简体中文</a>
 								</li>
 								<!-- Top Contact -->
 								<li class="top-parent">
-									<a href="<?=site_url()?>"<?php if(LANG === 'en'){ ?> class="lightBlue"<?php } ?>>English</a>
+									<a href="<?=site_url()?>/en/"<?php if(LANG === 'en'){ ?> class="lightBlue"<?php } ?>>English</a>
 								</li>
 							</ul>
 							<!-- Top Social Icon -->

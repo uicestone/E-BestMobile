@@ -47,7 +47,7 @@ function parse_tabs($content, $post_id){
 
 add_action('init', function(){
 	define('LANG', pll_current_language('slug'));
-	define('CAT_LANG_SUFFIX', pll_current_language('slug') === pll_default_language('slug') ? '' : '-' . LANG);
+	define('CAT_LANG_SUFFIX', pll_current_language('slug') === 'en' ? '' : '-' . LANG);
 
 	pll_register_string('more', 'More');
 	pll_register_string('home', 'Home');
