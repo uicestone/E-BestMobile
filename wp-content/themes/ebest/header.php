@@ -4,8 +4,8 @@
 		<meta charset="utf-8" />
 		<title><?php wp_title('&raquo;', true, 'right'); ?> <?php bloginfo('sitename'); ?></title>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="keywords" content="HTML5 Template" />
-		<meta name="description" content="Mist — Multi-Purpose HTML Template" />
+		<meta name="keywords" content="云销售管家,云销售管家软件,云销售管家系统,终端业务员管理软件,终端业务员管理系统,免费让客户下订单,手机订单系统" />
+		<meta name="description" content="上海意鹰信息技术有限公司创建于2000年，通过移动销售管理系统，可以掌控零售终端的执行力和透明度，帮助销售型企业赢取更多订单,将销售、智能、服务、社交融合,助力企业创建高效销售管理体系。" />
 		<meta name="author" content="zozothemes.com" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- Favicon -->
