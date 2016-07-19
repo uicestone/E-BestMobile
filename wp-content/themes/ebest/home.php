@@ -198,18 +198,21 @@
 	<div class="container">
 		<div class="inner">
 			<div class="row special-feature">
-				<div class="col-xs-3 animated fadeInUp visible" data-animation="fadeInUp">
-					<div class="s-feature-box text-center">
-						<div class="mask-top">
-							<!-- Icon -->
-							<i class="fa fa-home"></i>
-							<!-- Title -->
-							<h4>Retail<br> Execution</h4></div>
-						<div class="mask-bottom">
-							<p></p>
+
+				
+						<?php $post = null; $post = get_post(pll_get_post(get_posts('name=retail-execution')[0]->ID)); ?>
+						<div class="col-xs-3 animated fadeInUp visible" data-animation="fadeInUp">
+							<a href="<?=site_url()?>/category/solutions<?=CAT_LANG_SUFFIX?>/#post-<?=$post->ID?>"><div class="s-feature-box text-center">
+								<div class="mask-top">
+									<!-- Icon -->
+									<i class="fa fa-home"></i>
+									<!-- Title -->
+									<h4><?=$post->post_title?></h4></div>
+								<div class="mask-bottom">
+									<p><?=$post->post_excerpt?></p>
+								</div>
+							</div></a>
 						</div>
-					</div>
-				</div>
 				<!-- Special Feature Box 2 -->
 				<div class="col-xs-3 animated fadeInRight visible" data-animation="fadeInRight">
 					<div class="s-feature-box text-center">
