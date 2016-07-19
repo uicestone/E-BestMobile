@@ -18,7 +18,7 @@
 				<div class="row btns tabs">
 					<ul>
 						<?php foreach(get_posts(array('category_name'=>'products' . CAT_LANG_SUFFIX, 'order'=>'ASC')) as $index => $post){ ?>
-						<li<?php if($index === 0){ ?> class="active"<?php } ?>><a href="<?=site_url()?>/cn/category/products-cn/#post-<?=$post->ID?>"><?=$post->post_title?></a></li>
+						<li<?php if($index === 0){ ?> class="active"<?php } ?>><a href="<?=site_url()?>/category/products-cn/#post-<?=$post->ID?>"><?=$post->post_title?></a></li>
 						<?php } ?>
 					</ul>
 				</div>
@@ -35,7 +35,7 @@
 				<?=do_shortcode(get_posts('tag=products-video')[0]->post_content)?>
 			</div>
 			<div class="col-md-6 no-pad animated fadeInLeft visible" data-animation="fadeInLeft">
-				<a href="<?=site_url()?>/cn/category/customer-cn/#post-443" target="_blank"><img src="<?=get_stylesheet_directory_uri()?>/img/produce.png"></a>
+				<a href="<?=site_url()?>/category/customer-cn/#post-443" target="_blank"><img src="<?=get_stylesheet_directory_uri()?>/img/produce.png"></a>
 			</div>
 		</div>
 	</div>
